@@ -1,0 +1,61 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+{%- if page.subtitle %}
+<p class="subtitle">{{ page.subtitle }}</p>
+{% endif -%}
+<p class="byline">
+{% if site.show_author %}{{ page.author | default: site.author }} — {% endif %}
+{{ page.date | date: "%B %-d, %Y" }}
+
+{% if page.toc %}
+<nav class="table-of-contents">
+  <h2>Table of Contents</h2>
+  <ul class="toc-list">
+    {% assign content_lines = content | split: '<h' %}
+    {% assign section = 0 %}
+    {% assign subsection = 0 %}
+    {% for block in content_lines %}
+      {% assign tag = block | slice: 0, 1 %}
+      {% assign heading_html = block | split: '>' %}
+      {% assign heading_text = heading_html[1] | split: '</h' | first | strip %}
+      {% assign id = heading_text | slugify %}
+
+      {% if tag == '2' %}
+        {% assign section = section | plus: 1 %}
+        {% assign subsection = 0 %}
+        <li>
+          <span class="toc-num">{{ section }}</span>
+          <span class="toc-text"><a href="#{{ id }}">{{ heading_text }}</a></span>
+        </li>
+      {% elsif tag == '3' %}
+        {% assign subsection = subsection | plus: 1 %}
+        <li class="toc-sub">
+          <span class="toc-num">{{ section }}.{{ subsection }}</span>
+          <span class="toc-text"><a href="#{{ id }}">{{ heading_text }}</a></span>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>
+{% endif %}
+
+{{ content }}
+
+{%- if page.tags -%}
+  <div class="meta-tags">
+    <p class="post-tags">
+      <strong><span class="tag-ornament">j</span>  Tags : </strong>
+      {% for tag in page.tags %}
+        <a href="/tags#{{ tag | slugify }}" class="post-tag">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </p>
+  </div>
+{%- endif -%}
+</p>
+
+<section>
+  <div style="clear: both"></div>
+  <p class="backarrow"><a href="{% link blog/blog-list.md %}">← Back to all posts</a></p>
+</section>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body class="{% if page.full_width or layout.full_width %}full-width {% endif %}
+  {% if page.korean %}korean-font-post{% endif %}">
+    {% include header.html %}
+    <article class="group">
+      {{ content }}
+    </article>
+    {% include print-footer.html %}
+    {% include footer.html %}
+  </body>
+</html>
