@@ -17,7 +17,7 @@ full_width: true
   <div class="mini-sidebar">
     <img class="avatar" src="assets/img/YBKwon.jpg" alt="Yeongbin Kwon">
     <div class="name">Yeongbin Kwon</div>
-    <p class="bio">Undergraduate in Civil &amp; Environmental Engineering at Seoul National University. Interested in environmental fluid mechanics, coastal processes, and machine learning for climate and energy systems.</p>
+    <p class="bio">Undergraduate in Civil and Environmental Engineering at Seoul National University. Interested in environmental fluid mechanics, coastal processes, and machine learning for climate and energy systems.</p>
     <ul>
       <li><i class="fa-solid fa-location-dot"></i> Seoul, Republic of Korea</li>
       <li><i class="fa-solid fa-building-columns"></i> Seoul National University</li>
