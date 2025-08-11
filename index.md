@@ -1,84 +1,40 @@
 ---
 layout: page-hero
-title: Random Access Memories
+title: Yeongbin Kwon
 nav_title: Home
-head_title: Welcome to RAM
-subtitle: Archiving and revisiting thoughts
+head_title: Yeongbin Kwon
+subtitle: Undergraduate in Civil and Environmental Engineering
 weight: 1
+full_width: true
 ---
----
-<div class="index-title"><span class="ornament">1</span> Recent Posts</div>
-{% assign today = site.time | date: "%s" | plus: 0 %}
-{% assign new_cutoff = today | minus: 518400 %}
+<!-- Load icon sets if not already loaded -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css" rel="stylesheet">
 
-<div class="recent-posts">
-  {% assign visible_posts = site.posts | where_exp: "post", "post.hidden != true" %}
-  {% for post in visible_posts limit:5 %}
-    {% assign post_date = post.date | date: "%s" | plus: 0 %}
-    <div class="recent-post">
-      <h4>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        {% if post_date > new_cutoff %}
-          <span class="new-badge">NEW</span>
-        {% endif %}
-      </h4>
-      <div class="post-meta">
-        {{ post.date | date: "%Y-%m-%d" }}
-        {% if post.tags %}
-          <strong><span class="tag-ornament">j</span>Tags</strong>:
-          {% for tag in post.tags %}
-            <a href="/tags#{{ tag | slugify }}" class="tag">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
-          {% endfor %}
-        {% endif %}
-      </div>
-      <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 35 }}</p>
-    </div>
-  {% endfor %}
-</div>
+<div class="page-wrapper">
 
----
-<div class="index-title"><span class="ornament">a</span> Featured Albums</div>
-<div class="album-flex inside-text-width">
-  <div class="album">
-  <a href="blog/album-review/luminescent-creatures">
-    <img src="assets/img/featured_albums/luminiscentcreatures.png"></a>
-    <div class="album-info">
-      <h4>Luminescent Creatures - 青葉市子</h4>
-      <body><em>a deep dive into Mother Earth</em></body>
-    </div>
+  <!-- Sidebar -->
+  <div class="mini-sidebar">
+    <img class="avatar" src="assets/img/YBKwon.jpg" alt="Yeongbin Kwon">
+    <div class="name">Yeongbin Kwon</div>
+    <p class="bio">Undergraduate in Civil &amp; Environmental Engineering at Seoul National University. Interested in environmental fluid mechanics, coastal processes, and machine learning for climate and energy systems.</p>
+    <ul>
+      <li><i class="fa-solid fa-location-dot"></i> Seoul, Republic of Korea</li>
+      <li><i class="fa-solid fa-building-columns"></i> Seoul National University</li>
+      <li><i class="fa-solid fa-envelope"></i> <a href="mailto:ybkwon04@snu.ac.kr">Email</a></li>
+      <!-- <li><i class="ai ai-google-scholar"></i> <a href="https://scholar.google.com/">Google Scholar</a></li>
+      <li><i class="ai ai-orcid"></i> <a href="https://orcid.org/">ORCID</a></li> -->
+      <li><i class="fa-brands fa-github"></i> <a href="https://github.com/Zeugnis04/">GitHub</a></li>
+      <!-- <li><i class="fa-brands fa-bluesky"></i> <a href="https://bsky.app/">Bluesky</a></li> -->
+    </ul>
   </div>
-  <div class="album">
-  <a href="blog/album-review/forever-howlong  ">
-    <img src="assets/img/featured_albums/foreverhowlong.png" alt="Forever Howlong"></a>
-    <div class="album-info">
-      <h4>Forever Howlong - Black Country, New Road</h4>
-      <body><em>communal and baroque</em></body>
-    </div>
-  </div>
-</div>
-<section>
-  <div style="clear: both"></div>
-  <p class="backarrow" style="text-align: right;"><a href="featured-albums-archive">→ Featured albums archive</a></p>
-</section>
 
----
-<div class="index-title"><span class="ornament">b</span> Currently Reading Books</div>
-<div class="currently-reading">
-  <div class="book-cover">
-    <img src="assets/img/currently-reading-books/sansirou.jpg" alt="Book Cover">
+  <!-- Main content -->
+  <div class="main-content">
+    <h1>About Me</h1>
+    <p>I am an undergraduate in Civil & Environmental Engineering at Seoul National University, focusing on environmental fluid mechanics, coastal processes, and the application of machine learning to climate and energy systems.</p>
+
+    <p>My recent work includes developing low-cost stereo imaging methods to reconstruct nearshore wave fields and conducting research on foundational climate forecasting models using ERA5 reanalysis data. I am passionate about combining physics-based understanding with data-driven techniques to address challenges in climate prediction, renewable energy forecasting, and coastal engineering.</p>
   </div>
-  <div class="book-quote">
-    <blockquote>
-      <span lang="ko">“스트레이 십.” 미네코가 입속으로 말했다. 산시로는 그 숨결을 느낄 수 있었다.</span>
-    </blockquote>
-    <blockquote>
-    <span lang="ja"><ruby>「迷える子」<rt>ストレイ・シープ</rt></ruby>と美禰子が口の内で言った。三四郎はその<ruby>呼吸<rt>いき</rt></ruby>を感ずることができた。<br>
-      <cite>— 夏目漱石, <strong>三四郎</strong></cite></span>
-    </blockquote>
-  </div>
+
 </div>
-<section>
-  <div style="clear: both"></div>
-  <p class="backarrow" style="text-align: right;"><a href="books-archive">→ Books archive</a></p>
-</section>
----

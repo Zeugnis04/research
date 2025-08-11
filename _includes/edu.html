@@ -1,0 +1,18 @@
+<style>
+  .edu-item{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-top:.4rem}
+  .edu-left{font-weight:600}
+  .edu-place{font-size:.92em;color:#666;margin-left:.5ch}
+  .edu-period{white-space:nowrap;color:#333}
+  .edu-title{margin:.15rem 0 .6rem 0;font-style:italic}
+</style>
+
+<div class="edu-item">
+  <div class="edu-left">
+    {% if inst_url %}<a href="{{ inst_url }}">{% endif %}{{ inst }}{% if inst_url %}</a>{% endif %}
+    <span class="edu-place">{{ place }}</span>
+  </div>
+  <div class="edu-period">{{ period }}</div>
+</div>
+<div class="edu-title">
+  {% if title_url %}<a href="{{ title_url }}">{% endif %}{{ title }}{% if title_url %}</a>{% endif %}
+</div>

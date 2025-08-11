@@ -10,7 +10,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-left: 12.5%;
-    font-family: adobe-caslon-pro, et-book, "source-han-serif-sc", "Times New Roman", serif;
+    font-family: avenir-next-world, avenir-next-world, et-book, "source-han-serif-sc", "Times New Roman", serif;
     font-variant-ligatures: common-ligatures;
     background-color: #fffff8;
     color: #111;
@@ -26,7 +26,7 @@ body {
     font-style: normal;
     }
 :lang(ko)   {
-    font-family: adobe-caslon-pro, sandoll-myeongjoneo1, serif;
+    font-family: avenir-next-world, sandoll-myeongjoneo1, serif;
     font-style: normal;
     line-height: 1.8;
     font-size:95%;
@@ -52,7 +52,9 @@ span[lang="ja"] ruby rt {
 }
 
 h1 {
-    font-weight: 400;
+    font-family: avenir-next-world;
+    // font-weight: bold;
+    font-variant: small-caps;
     margin-top: 4rem;
     margin-bottom: 1.5rem;
     font-size: 3.2rem;
@@ -60,8 +62,9 @@ h1 {
 }
 
 h2 {
-    font-style: italic;
-    font-weight: 400;
+    font-family: avenir-next-world;
+    // font-style: bold;
+    font-weight: 500;
     margin-top: 2.1rem;
     margin-bottom: 1.4rem;
     font-size: 2.2rem;
@@ -70,8 +73,9 @@ h2 {
 
 
 h3 {
-    font-style: italic;
-    font-weight: 400;
+    font-family: avenir-next-world;
+    font-style: bold;
+    font-weight: 500;
     font-size: 1.7rem;
     margin-top: 2rem;
     margin-bottom: 1.4rem;
@@ -89,7 +93,7 @@ hr {
 }
 
 p.subtitle {
-    font-style: italic;
+    font-style: bold;
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 1.8rem;
@@ -97,8 +101,11 @@ p.subtitle {
     line-height: 1;
 }
 
+strong {
+    font-weight: 500;
+}
 .numeral {
-    font-family: adobe-caslon-pro;
+    font-family: avenir-next-world;
 }
 
 .danger {
@@ -306,7 +313,7 @@ img {
 
 .sidenote-number:after,
 .sidenote:before {
-    font-family: adobe-caslon-pro;
+    font-family: avenir-next-world;
     position: relative;
     vertical-align: baseline;
 }
@@ -348,7 +355,7 @@ div.table-wrapper {
 
 code, pre > code {
     font-family: "Fira Code", "SF Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    font-size: 0.9rem;
+    // font-size: 0.9rem;
     line-height: 1.2rem;
     -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
 }
@@ -381,7 +388,7 @@ pre.fullwidth > code {
 }
 
 .fullwidth {
-    max-width: 90%;
+    max-width: 75%;
     clear:both;
 }
 
