@@ -14,42 +14,103 @@ full_width: true
 
 ## Education
 
-**[Seoul National University](https://en.snu.ac.kr/index.html)** <span class="date">2022.03 – 2026.02 <span class="location">*(expected)*</span></span>  
-<span class="location">*Seoul, Republic of Korea*</span>  
-<span class="cvtitle">Undergraduate in [Civil and Environmental Engineering](https://cee.snu.ac.kr/english/)</span>  
-- Relevant Coursework: Hydrology, Hydraulics and Laboratory, Water Resources Engineering, Coastal Engineering and Laboratory, Open Channel Hydraulics, Wave Mechanics  
-<!-- - GPA: **3.88/4.30** *(current)* -->
+<div class="edu-header">
+  <div class="edu-left">
+    <strong><a href="https://en.snu.ac.kr/index.html">Seoul National University</a></strong>
+    <span class="location-inline">Seoul, Republic of Korea</span>
+  </div>
+  <span class="date">2022.03 – 2026.02 <span class="location">(expected)</span></span>
+</div>
+<div class="location-block">Seoul, Republic of Korea</div>
 
-**[Sejong Science High School](https://sjsh.sen.hs.kr/)** <span class="date">2020.03 – 2022.02</span>  
-<span class="location">*Seoul, Republic of Korea*</span>  
-<span class="cvtitle">Early Graduate — Graduated a year earlier than the usual three years program</span>
+<div class="cvtitle">
+  Undergraduate in <a href="https://cee.snu.ac.kr/english/">Civil and Environmental Engineering</a>
+</div>
+<ul>
+  <li>Relevant Coursework: Hydrology, Hydraulics and Laboratory, Water Resources Engineering, Coastal Engineering and Laboratory, Open Channel Hydraulics, Wave Mechanics, Mathematical Analysis, Abstract Algebra</li>
+</ul>
 
+<div class="edu-header">
+  <div class="edu-left">
+    <strong><a href="https://sjsh.sen.hs.kr/">Sejong Science High School</a></strong>
+    <span class="location-inline">Seoul, Republic of Korea</span>
+  </div>
+  <span class="date">2020.03 – 2022.02</span>
+</div>
+<div class="location-block">Seoul, Republic of Korea</div>
+
+<div class="cvtitle">
+  Early Graduate — Graduated a year earlier than the usual three-year program
+</div>
 
 ## Projects
 
-**Low-Cost Stereo Imaging for Coastal Wave Field Reconstruction<br> and Quantification of Wave Breaking** <span class="date">2025.05 – 2025.12 <span class="location">*(expected)*</span></span>  
-<span class="location">*Seoul National University Undergraduate Individual Research Grant*</span>
+<div class="edu-header">
+  <div class="edu-left">
+    <strong>Low-Cost Stereo Imaging for Coastal Wave Field Reconstruction and Quantification of Wave Breaking</strong>
+  </div>
+  <span class="date">2025.05 – 2025.12 <span class="location">(expected)</span></span>
+</div>
+<div class="location-block">Seoul National University Undergraduate Individual Research Grant</div>
+
 
 
 ## Internships and Experiences
 
-**Undergraduate Research Intern** <span class="date">2025.06 – 2025.08</span>  
-<span class="location">*<a href="https://www.eee.columbia.edu/">Columbia University</a>, New York City*</span>  
-<span class="cvtitle">Worked with Prof. Upmanu Lall's group in the Department of Earth and Environmental Engineering</span>  
-- Forecasted wind and solar climate dynamics using foundational models and deep learning.  
-- Submitted two conference abstracts for AGU 2025.  
+<!-- Undergraduate Research Intern -->
+<div class="edu-header">
+  <div class="edu-left">
+    <strong>Undergraduate Research Intern</strong>
+    <span class="location-inline"><a href="https://www.eee.columbia.edu/">Columbia University</a>, New York City</span>
+  </div>
+  <span class="date">2025.06 – 2025.08</span>
+</div>
+<div class="location-block"><a href="https://www.eee.columbia.edu/">Columbia University</a>, New York City</div>
 
-**Trilateral Students Activity in Seoul** <span class="date">2024.08</span>  
-<span class="location">*Seoul, Republic of Korea*</span>  
-<span class="cvtitle">Team leader of the Geotechnical Engineering group</span>  
-- Seminar between Seoul National University, National Taiwan University, and University of Tokyo civil engineering students.  
-- Led group discussions and presentations.  
+<div class="cvtitle">
+  Worked with Prof. Upmanu Lall's group in the Department of Earth and Environmental Engineering
+</div>
+<ul>
+  <li>Forecasted wind and solar climate dynamics using foundational models and deep learning.</li>
+  <li>Submitted two conference abstracts for AGU 2025.</li>
+</ul>
 
-**Visiting Student** <span class="date">2024.06 – 2024.08</span>  
-<span class="location">*<a href="https://www.berkeley.edu/">University of California, Berkeley</a>*</span>  
-<span class="cvtitle">SNU Study Abroad Program grant recipient (USD 5000)</span>  
-- Took classes including *Introduction to Partial Differential Equations*.  
-- Lived in International House and participated in diverse cultural activities.
+<!-- Trilateral Students Activity in Seoul -->
+<div class="edu-header">
+  <div class="edu-left">
+    <strong>Trilateral Students Activity in Seoul</strong>
+    <span class="location-inline">Seoul, Republic of Korea</span>
+  </div>
+  <span class="date">2024.08</span>
+</div>
+<div class="location-block">Seoul, Republic of Korea</div>
+
+<div class="cvtitle">
+  Team leader of the Geotechnical Engineering group
+</div>
+<ul>
+  <li>Seminar between Seoul National University, National Taiwan University, and University of Tokyo civil engineering students.</li>
+  <li>Led group discussions and presentations.</li>
+</ul>
+
+<!-- Visiting Student -->
+<div class="edu-header">
+  <div class="edu-left">
+    <strong>Visiting Student</strong>
+    <span class="location-inline"><a href="https://www.berkeley.edu/">University of California, Berkeley</a></span>
+  </div>
+  <span class="date">2024.06 – 2024.08</span>
+</div>
+<div class="location-block"><a href="https://www.berkeley.edu/">University of California, Berkeley</a></div>
+
+<div class="cvtitle">
+  SNU Study Abroad Program grant recipient (USD 5000)
+</div>
+<ul>
+  <li>Took classes including <em>Introduction to Partial Differential Equations</em>.</li>
+  <li>Lived in International House and participated in diverse cultural activities.</li>
+</ul>
+
 
 ## Awards and Honors
 - *Outstanding Volunteer Award* <span class="date">2025.07<span>

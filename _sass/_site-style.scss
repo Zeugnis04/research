@@ -1,18 +1,71 @@
 /* Override this file in your site to create any custom site-local CSS */
 /* CV formatting */
 
-.location {
-  font-size: .80em; color: #666; 
+
+.edu-header {
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap; /* allow wrapping on smaller screens */
+  width: 90%;
+  margin-top: 1.0rem;
+}
+
+.edu-left {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.location-inline {
+  display: none; /* hidden by default (wide view) */
+  font-size: 1.12rem;
+  color: #666;
+  margin-left: 0.8rem;
+  font-style: italic;
+}
+
+.location-block {
+  font-size: 1.12rem;
+  color: #666;
+  font-style: italic;
 }
 
 .date {
-  float: right;
+  white-space: nowrap;
+  /* remove float — flexbox handles alignment */
 }
 
 .cvtitle {
-  margin-top: 0.8rem;  /* was 0.5rem — gives more space from date/location line */
-  margin-bottom: -0.2rem;
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  margin-bottom: -1rem;
 }
+
+.location {
+  font-size: 0.80em;
+  color: #666;
+  margin-bottom: 0.2rem;
+}
+
+/* On smaller screens, move location inline and stack date if needed */
+@media (max-width: 650px) {
+  .location-block {
+    display: none; /* hide below-header location */
+  }
+  .location-inline {
+    display: inline; /* show next to title */
+  }
+  .edu-header {
+    flex-direction: column; /* stack title/location above date */
+    align-items: flex-start;
+  }
+  .date {
+    margin-top: 0.2rem; /* spacing between stacked lines */
+  }
+}
+
 
 .mini-sidebar {
   width: 260px;
@@ -92,11 +145,11 @@
   flex: 0 0 260px;         /* fixed sidebar width */
 }
 
-/* <= 1024px: ease spacing and shrink fonts a touch */
+/* <= 1024px: ease spacing */
 @media (max-width: 1024px) {
   .page-wrapper { gap: 1.5rem; }
-  .mini-sidebar { font-size: 11.5px; }
-  .mini-sidebar .name { font-size: 100%; }
+  /* Removed font-size: 11.5px */
+  .mini-sidebar .name { font-size: inherit; }
 }
 
 /* <= 768px: stack columns, make sidebar full width */
@@ -129,11 +182,13 @@
 /* <= 480px: tighten further */
 @media (max-width: 480px) {
   .page-wrapper { padding: 0 0.5rem; }
-  .mini-sidebar { font-size: 11px; padding: 14px; }
-  .mini-sidebar .name { font-size: 100%; }
+  /* Removed font-size: 11px */
+  .mini-sidebar { padding: 14px; }
+  .mini-sidebar .name { font-size: inherit; }
   .mini-sidebar .avatar { width: 88px; height: 88px; }
   .mini-sidebar i { width: 16px; }
 }
+
 
 /* Recent posts */
 .recent-posts {
