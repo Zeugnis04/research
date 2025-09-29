@@ -1,6 +1,6 @@
 /* This file contains all the constants for colors and font styles */
 
-$body-font: avenir-next-world, adobe-caslon-pro, et-book, "source-han-serif-sc", sandoll-myeongjoneo1, adobe-tamil, linotype-devanagari, "Times New Roman", POJGaramond, serif;
+$body-font: ff-zwo-web-pro, avenir-next-world, adobe-caslon-pro, et-book, "source-han-serif-sc", sandoll-myeongjoneo1, adobe-tamil, linotype-devanagari, "Times New Roman", POJGaramond, serif;
 /*
  * The tufte-css preferred sans font is Gill Sans, but this is not freely available.
  * We use Lato instead, which is royalty free.
@@ -8,7 +8,7 @@ $body-font: avenir-next-world, adobe-caslon-pro, et-book, "source-han-serif-sc",
 $sans-font:  Lato, LatoLatin, "Cabin", "Gill Sans", "Trebuchet MS", sans-serif;
 $code-font: "Fira Code", "SF Mono", Consolas, Courier, monospace;
 $text-color: #111;
-$bg-color: #fffff8;
+$bg-color: #fafafa;
 $contrast-color: #111;
 $border-color: #333333;
 $link-style: color; // choices are 'color' or 'underline'. Default is color using $contrast-color set above

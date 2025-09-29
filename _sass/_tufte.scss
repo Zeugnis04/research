@@ -10,9 +10,9 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-left: 12.5%;
-    font-family: avenir-next-world, avenir-next-world, et-book, "source-han-serif-sc", "Times New Roman", serif;
+    font-family: ff-zwo-web-pro, avenir-next-world, et-book, "source-han-serif-sc", "Times New Roman", serif;
     font-variant-ligatures: common-ligatures;
-    background-color: #fffff8;
+    background-color: #fafafa;
     color: #111;
     max-width: 1400px;
     counter-reset: sidenote-counter;
@@ -52,7 +52,7 @@ span[lang="ja"] ruby rt {
 }
 
 h1 {
-    font-family: avenir-next-world;
+    font-family: ff-zwo-web-pro, avenir-next-world;
     // font-weight: bold;
     font-variant: small-caps;
     margin-top: 4rem;
@@ -62,7 +62,7 @@ h1 {
 }
 
 h2 {
-    font-family: avenir-next-world;
+    font-family: ff-zwo-web-pro, avenir-next-world;
     // font-style: bold;
     font-weight: 500;
     margin-top: 2.1rem;
@@ -73,7 +73,7 @@ h2 {
 
 
 h3 {
-    font-family: avenir-next-world;
+    font-family: ff-zwo-web-pro, avenir-next-world;
     font-style: bold;
     font-weight: 500;
     font-size: 1.7rem;
@@ -105,7 +105,7 @@ strong {
     font-weight: 500;
 }
 .numeral {
-    font-family: avenir-next-world;
+    font-family: ff-zwo-web-pro, avenir-next-world;
 }
 
 .danger {
@@ -313,7 +313,7 @@ img {
 
 .sidenote-number:after,
 .sidenote:before {
-    font-family: avenir-next-world;
+    font-family: ff-zwo-web-pro, avenir-next-world;
     position: relative;
     vertical-align: baseline;
 }

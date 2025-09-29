@@ -1,6 +1,158 @@
 /* Override this file in your site to create any custom site-local CSS */
+/* Homepage Hero Layout */
+.hero-image {
+  margin: -1rem 0 2rem 0; /* negative top margin to pull up closer to header, auto left/right to center */
+  display: flex;
+  width: 90%;
+  // justify-content: center;
+}
+
+.hero-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: block;
+}
+
+.homepage-content {
+  width: 90%;
+  // margin: 0 auto;
+  // padding: 0 1rem;
+}
+
+.homepage-content h1 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: center;
+  width: 90%;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  text-decoration: none !important;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.contact-btn:hover {
+  background: #e9ecef;
+  border-color: #dee2e6;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  color: #333;
+  text-decoration: none !important;
+}
+
+.contact-btn i {
+  font-size: 1.1em;
+}
+
+.email-btn:hover {
+  background: #e3f2fd;
+  border-color: #2196f3;
+  color: #1565c0;
+}
+
+.github-btn:hover {
+  background: #f3e5f5;
+  border-color: #9c27b0;
+  color: #7b1fa2;
+}
+
+.cv-btn:hover {
+  background: #fff3e0;
+  border-color: #ff9800;
+  color: #e65100;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .hero-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+  }
+
+  .homepage-content {
+    width: 100%;
+    padding: 0 0.75rem;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-btn {
+    width: 200px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+  }
+
+  .homepage-content {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+}
+
 /* CV formatting */
 
+/* CV Download Button */
+.cv-download-section {
+  text-align: center;
+  margin: 0 0 2rem 0;
+}
+
+.cv-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #4caf50;
+  border: 1px solid #45a049;
+  border-radius: 8px;
+  text-decoration: none !important;
+  color: white !important;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.cv-download-btn:hover {
+  background: #45a049;
+  border-color: #3e8e41;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.cv-download-btn i {
+  font-size: 1.1em;
+}
 
 .edu-header {
   font-size: 1.4rem;
@@ -72,7 +224,7 @@
   padding: 16px;
   border: 1px solid #e6e6e6;
   border-radius: 12px;
-  background: #fffff8;
+  background: #f2f2f2;
   box-shadow: 0 2px 8px rgba(0,0,0,.04);
   font-size: 18px;
   color: #333;

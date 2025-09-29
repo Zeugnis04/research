@@ -8,6 +8,11 @@ subtitle: Undergraduate at Seoul National University, <br>Department of Civil an
 full_width: true
 ---
 
+<!-- Load icon sets if not already loaded -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+*[Download as PDF](assets/YeongbinKwonCV202507.pdf)*
+
 ## Contacts
 (+82) 10-8108-2719  
 [ybkwon04@snu.ac.kr](mailto:ybkwon04@snu.ac.kr) • [ybkwon04@gmail.com](mailto:ybkwon04@gmail.com)  
@@ -97,11 +102,11 @@ full_width: true
 <div class="edu-header">
   <div class="edu-left">
     <strong>Visiting Student</strong>
-    <span class="location-inline"><a href="https://www.berkeley.edu/">University of California, Berkeley</a></span>
+    <span class="location-inline"><a href="https://www.berkeley.edu/">University of California</a>, Berkeley</span>
   </div>
   <span class="date">2024.06 – 2024.08</span>
 </div>
-<div class="location-block"><a href="https://www.berkeley.edu/">University of California, Berkeley</a></div>
+<div class="location-block"><a href="https://www.berkeley.edu/">University of California</a>, Berkeley</div>
 
 <div class="cvtitle">
   SNU Study Abroad Program grant recipient (USD 5000)
