@@ -11,7 +11,7 @@ full_width: true
 <!-- Load icon sets if not already loaded -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-*[Download as PDF](assets/YeongbinKwonCV202507.pdf)*
+*[Download as PDF](assets/YeongbinKwonCV202509.pdf)*
 
 ## Contacts
 (+82) 10-8108-2719  
