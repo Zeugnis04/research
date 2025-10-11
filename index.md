@@ -19,7 +19,7 @@ full_width: true
 <!-- Main content -->
 <div class="homepage-content">
   <h1>About Me</h1>
-  <p>I am Yeongbin Kwon (권영빈 權榮彬), an undergraduate in Civil and Environmental Engineering at Seoul National University, focusing on environmental fluid mechanics, coastal processes, and the application of machine learning to climate and energy systems.</p>
+  <p>I am Yeongbin Kwon (Hangul: <span lang="ko">권영빈</span>, <span lang="ja">漢字：權榮彬</span>, IPA: <span lang="ipa">[kʷʌn.jʌŋ.bin]</span>), an undergraduate in Civil and Environmental Engineering at Seoul National University, focusing on environmental fluid mechanics, coastal processes, and the application of machine learning to climate and energy systems.</p>
 
   <p>My recent work includes developing low-cost stereo imaging methods to reconstruct nearshore wave fields and analyzing wave breaking and conducting research on foundational climate forecasting models using ERA5 reanalysis data. I am passionate about combining physics-based understanding with data-driven techniques to address challenges in climate prediction, renewable energy forecasting, and coastal engineering.</p>
 

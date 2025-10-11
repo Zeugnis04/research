@@ -10,7 +10,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-left: 12.5%;
-    font-family: ff-zwo-web-pro, avenir-next-world, et-book, "source-han-serif-sc", "Times New Roman", serif;
+    font-family: ff-zwo-web-pro, avenir-next-world, hiragino-kaku-gothic-pron, "Times New Roman", serif;
     font-variant-ligatures: common-ligatures;
     background-color: #fafafa;
     color: #111;
@@ -26,13 +26,13 @@ body {
     font-style: normal;
     }
 :lang(ko)   {
-    font-family: avenir-next-world, sandoll-myeongjoneo1, serif;
+    font-family: avenir-next-world, sandoll-gothicneo1, serif;
     font-style: normal;
     line-height: 1.8;
     font-size:95%;
 }
 :lang(ja)   {
-    font-family: kozuka-mincho-pr6n, serif;
+    font-family: hiragino-kaku-gothic-pron, kozuka-mincho-pr6n, serif;
     font-size:95%;
     font-style: normal;
 }
@@ -49,6 +49,9 @@ span[lang="ja"] ruby rt {
   }
 :lang(bo) {
     font-family: 'Noto Serif Tibetan', serif;
+}
+:lang(ipa) {
+    font-family: "Times New Roman", serif;
 }
 
 h1 {
