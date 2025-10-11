@@ -13,7 +13,16 @@
     {% endif %}
   {% endif %}
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <link rel="stylesheet" href="https://use.typekit.net/ygl3sjs.css">
+  <script>
+  (function(d) {
+    var config = {
+      kitId: 'ygl3sjs',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+  </script>
   <script>
     (function(d) {
       var config = {
@@ -44,8 +53,8 @@
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
   <link rel="stylesheet" type="text/css" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" type="text/css" href="{{ "/assets/css/fonts-et-book.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" type="text/css" href="{{ "/assets/css/fonts-lato.css" | prepend: site.baseurl }}">
+  <!-- <link rel="stylesheet" type="text/css" href="{{ "/assets/css/fonts-et-book.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" type="text/css" href="{{ "/assets/css/fonts-lato.css" | prepend: site.baseurl }}"> -->
   <link rel="stylesheet" type="text/css" href="{{ "/assets/css/latex.css" | prepend: site.baseurl }}">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

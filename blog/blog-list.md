@@ -1,5 +1,5 @@
 ---
 layout: blog-list
-title: Blog
+title: Works
 weight: 2
 ---

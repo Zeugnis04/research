@@ -32,7 +32,7 @@ full_width: true
   Undergraduate in <a href="https://cee.snu.ac.kr/english/">Civil and Environmental Engineering</a>
 </div>
 <ul>
-  <li>Relevant Coursework: Hydrology, Hydraulics and Laboratory, Water Resources Engineering, Coastal Engineering and Laboratory, Open Channel Hydraulics, Wave Mechanics, Mathematical Analysis, Abstract Algebra</li>
+  <li>Relevant Coursework: Hydrology, Hydraulics and Laboratory, Water Resources Engineering, Coastal Engineering and Laboratory, Open Channel Hydraulics, Wave Mechanics</li>
 </ul>
 
 <div class="edu-header">
@@ -52,11 +52,19 @@ full_width: true
 
 <div class="edu-header">
   <div class="edu-left">
-    <strong>Low-Cost Stereo Imaging for Coastal Wave Field Reconstruction and Quantification of Wave Breaking</strong>
+    <strong><a href="blog/research/stereo-imaging-coastal-waves">Low-Cost Stereo Imaging for Coastal Wave Field Reconstruction and Quantification of Wave Breaking</a></strong>
   </div>
   <span class="date">2025.05 – 2025.12 <span class="location">(expected)</span></span>
 </div>
-<div class="location-block">Seoul National University Undergraduate Individual Research Grant</div>
+<div class="location-block">Seoul National University Undergraduate Independent Research Grant</div>
+
+<div class="edu-header">
+  <div class="edu-left">
+    <strong><a href="blog/research/lid-stormwater-strategies">Low Impact Development (LID) Strategies for Stormwater Reduction and Reuse on Campus</a></strong>
+  </div>
+  <span class="date">2025.09 – 2025.12 <span class="location">(expected)</span></span>
+</div>
+<div class="location-block">SNU Integrated Design of Civil Engineering Systems Course</div>
 
 
 
@@ -76,8 +84,8 @@ full_width: true
   Worked with Prof. Upmanu Lall's group in the Department of Earth and Environmental Engineering
 </div>
 <ul>
-  <li>Forecasted wind and solar climate dynamics using foundational models and deep learning.</li>
-  <li>Submitted two conference abstracts for AGU 2025.</li>
+  <li>Used AURORA, one of the most recent foundational models in climate, to explore weather dynamics and how perturbations affects the dynamics.</li>
+  <li>Worked with Prof. Upmanu Lall's group in the Department of Earth and Environmental Engineering and submitted two conference abstracts for AGU 2025.</li>
 </ul>
 
 <!-- Trilateral Students Activity in Seoul -->
@@ -94,8 +102,8 @@ full_width: true
   Team leader of the Geotechnical Engineering group
 </div>
 <ul>
-  <li>Seminar between Seoul National University, National Taiwan University, and University of Tokyo civil engineering students.</li>
-  <li>Led group discussions and presentations.</li>
+  <li>Participated in a group seminar between Seoul National University, National Taiwan University, and University of Tokyo civil engineering students.</li>
+  <li>As the team leader of the Geotechnical Engineering group, led group discussions and presented the results in the final session.</li>
 </ul>
 
 <!-- Visiting Student -->
@@ -108,20 +116,18 @@ full_width: true
 </div>
 <div class="location-block"><a href="https://www.berkeley.edu/">University of California</a>, Berkeley</div>
 
-<div class="cvtitle">
-  SNU Study Abroad Program grant recipient (USD 5000)
-</div>
 <ul>
-  <li>Took classes including <em>Introduction to Partial Differential Equations</em>.</li>
-  <li>Lived in International House and participated in diverse cultural activities.</li>
+  <li>Selected as a recipient of SNU Study Abroad Program grant.</li>
+  <li>Took classes including <em>Introduction to Partial Differential Equations</em> at UC Berkeley; lived in the International House and participated in diverse cultural activities.</li>
 </ul>
 
 
 ## Awards and Honors
-- *Outstanding Volunteer Award* <span class="date">2025.07<span>
-- *Global Short-Term Study Abroad Scholarship* <span class="date">Spring 2024<span>
-- *Merit-Based Tuition Scholarship*, Dean's List <span class="date">Spring 2024<span>
-- *Kwanak Scholarship*, Dean's List <span class="date">Fall 2024<span> 
+- *Merit-Based Tuition Scholarship*, Dean's List <span class="date">Fall 2025</span>
+- *Outstanding Volunteer Award* <span class="date">2025.07</span>
+- *Global Short-Term Study Abroad Scholarship* <span class="date">Spring 2024</span>
+- *Merit-Based Tuition Scholarship*, Dean's List <span class="date">Spring 2024</span>
+- *Kwanak Scholarship*, Dean's List <span class="date">Fall 2023</span> 
 
 ## Skills
 - **Languages**: Korean (native), English (native), Japanese (proficient and fluent)  

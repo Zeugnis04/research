@@ -10,7 +10,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-left: 12.5%;
-    font-family: ff-zwo-web-pro, avenir-next-world, hiragino-kaku-gothic-pron, "Times New Roman", serif;
+    font-family: ff-zwo-web-pro, avenir-next-world, hiragino-kaku-gothic-pron, "Times New Roman", sans-serif;
     font-variant-ligatures: common-ligatures;
     background-color: #fafafa;
     color: #111;
@@ -21,18 +21,18 @@ body {
 }
 /*<---- Various Languages ---->*/
 
-:lang(ta) 	{
-    font-family: adobe-tamil, serif;
-    font-style: normal;
-    }
+// :lang(ta) 	{
+//     font-family: adobe-tamil, serif;
+//     font-style: normal;
+//     }
 :lang(ko)   {
-    font-family: avenir-next-world, sandoll-gothicneo1, serif;
+    font-family: sandoll-gothicneo1, avenir-next-world, sans-serif;
     font-style: normal;
-    line-height: 1.8;
+    // line-height: 1.8;
     font-size:95%;
 }
 :lang(ja)   {
-    font-family: hiragino-kaku-gothic-pron, kozuka-mincho-pr6n, serif;
+    font-family: hiragino-kaku-gothic-pron, kozuka-mincho-pr6n, sans-serif;
     font-size:95%;
     font-style: normal;
 }
@@ -55,7 +55,7 @@ span[lang="ja"] ruby rt {
 }
 
 h1 {
-    font-family: ff-zwo-web-pro, avenir-next-world;
+    font-family: ff-zwo-web-pro, avenir-next-world, hiragino-kaku-gothic-pron, "Times New Roman", sans-serif;;
     // font-weight: bold;
     font-variant: small-caps;
     margin-top: 4rem;
@@ -65,9 +65,9 @@ h1 {
 }
 
 h2 {
-    font-family: ff-zwo-web-pro, avenir-next-world;
+    font-family: ff-zwo-web-pro, avenir-next-world, hiragino-kaku-gothic-pron, "Times New Roman", sans-serif;
     // font-style: bold;
-    font-weight: 500;
+    font-weight: 700;
     margin-top: 2.1rem;
     margin-bottom: 1.4rem;
     font-size: 2.2rem;
@@ -76,9 +76,9 @@ h2 {
 
 
 h3 {
-    font-family: ff-zwo-web-pro, avenir-next-world;
-    font-style: bold;
-    font-weight: 500;
+    font-family: ff-zwo-web-pro, avenir-next-world, hiragino-kaku-gothic-pron, "Times New Roman", sans-serif;
+    // font-style: bold;
+    font-weight: 700;
     font-size: 1.7rem;
     margin-top: 2rem;
     margin-bottom: 1.4rem;
@@ -96,7 +96,7 @@ hr {
 }
 
 p.subtitle {
-    font-style: bold;
+    // font-style: bold;
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 1.8rem;
@@ -105,7 +105,7 @@ p.subtitle {
 }
 
 strong {
-    font-weight: 500;
+    font-weight: 700;
 }
 .numeral {
     font-family: ff-zwo-web-pro, avenir-next-world;
