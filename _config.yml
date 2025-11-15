@@ -6,6 +6,7 @@ header: false
 author: Yeongbin Kwon
 description: Research
 show_author: true
+google_analytics: G-QGXVPV6SN8
 markdown: kramdown
 baseurl: "/academic"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"

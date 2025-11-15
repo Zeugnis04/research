@@ -108,7 +108,7 @@ full_width: true
   Team leader of the Geotechnical Engineering group
 </div>
 <ul>
-  <li>Participated in a group seminar between Seoul National University, National Taiwan University, and University of Tokyo civil engineering students as the team leader of the Geotechnical Engineering group, leading discussions and presenting the final results.</li>
+  <li>Participated in a group seminar between Seoul National University, National Taiwan University, and University of Tokyo civil engineering students, as the team leader of the Geotechnical Engineering group, leading group discussions and presenting the results in the final session.</li>
 </ul>
 
 <!-- Visiting Student -->
@@ -128,12 +128,71 @@ full_width: true
 
 
 ## Awards and Honors
-- *Merit-Based Tuition Scholarship*, Dean's List <span class="date">Fall 2025</span>
-- *Outstanding Volunteer Award* <span class="date">2025.07</span>
-- *Global Short-Term Study Abroad Scholarship* <span class="date">Spring 2024</span>
-- *Merit-Based Tuition Scholarship*, Dean's List <span class="date">Spring 2024</span>
-- *Kwanak Scholarship*, Dean's List <span class="date">Fall 2023</span> 
+
+<div class="cv-awards">
+  <div class="edu-header award-entry">
+    <div class="edu-left">
+      <strong>Merit-Based Tuition Scholarship</strong>
+    </div>
+    <span class="date">Fall 2025</span>
+  </div>
+
+  <div class="edu-header award-entry">
+    <div class="edu-left">
+      <strong>Outstanding Volunteer Award</strong>
+    </div>
+    <span class="date">2025.07</span>
+  </div>
+
+  <div class="edu-header award-entry">
+    <div class="edu-left">
+      <strong>Global Short-Term Study Abroad Scholarship</strong>
+    </div>
+    <span class="date">Spring 2024</span>
+  </div>
+
+  <div class="edu-header award-entry">
+    <div class="edu-left">
+      <strong>Merit-Based Tuition Scholarship</strong>
+    </div>
+    <span class="date">Spring 2024</span>
+  </div>
+
+  <div class="edu-header award-entry">
+    <div class="edu-left">
+      <strong>Kwanak Scholarship</strong>
+    </div>
+    <span class="date">Fall 2023</span>
+  </div>
+</div>
+
+## Community Service
+
+<div class="edu-header">
+  <div class="edu-left">
+    <strong>Undergraduate Mentor</strong>
+    <span class="location-inline">Seoul National University Social Responsibility</span>
+  </div>
+  <span class="date">2025.05 – Present</span>
+</div>
+<div class="location-block">Seoul National University Social Responsibility</div>
+<ul>
+  <li>Mentoring children in middle school, focusing on interaction and communication with the student.</li>
+</ul>
+
+<div class="edu-header">
+  <div class="edu-left">
+    <strong>Undergraduate Volunteer</strong>
+    <span class="location-inline">Seoul National University Social Responsibility</span>
+  </div>
+  <span class="date">2025.03 – 2025.06</span>
+</div>
+<div class="location-block">Seoul National University Social Responsibility</div>
+<ul>
+  <li>Mentored a middle school student in Korea from a Bolivian-Korean multi-cultural family for three months, helping the student through cultural interactions and education-focused support.</li>
+  <li>Outstanding Volunteer Award recipient (2025.07).</li>
+</ul>
 
 ## Skills
-- **Languages**: Korean (native), English (native), Japanese (proficient and fluent)  
-- **Programming and Typesetting**: LaTeX, Python, MATLAB, R, C, HTML/CSS, Deep Learning
+<p><strong>Languages:</strong> Korean (native), English (native), Japanese (proficient and fluent)</p>
+<p><strong>Programming and Typesetting:</strong> LATEX, Python, MATLAB, R, C, HTML/CSS, Deep Learning</p>

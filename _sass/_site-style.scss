@@ -284,6 +284,16 @@
   margin-bottom: 0.2rem;
 }
 
+.cv-awards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.award-entry {
+  width: 90%;
+}
+
 /* On smaller screens, move location inline and stack date if needed */
 @media (max-width: 650px) {
   .location-block {
