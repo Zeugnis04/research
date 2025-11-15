@@ -14,7 +14,6 @@ full_width: true
 *[Download as PDF](assets/YeongbinKwonCV202511.pdf)*
 
 ## Contacts
-(+82) 10-8108-2719  
 [ybkwon04@snu.ac.kr](mailto:ybkwon04@snu.ac.kr) • [ybkwon04@gmail.com](mailto:ybkwon04@gmail.com)  
 
 ## Education

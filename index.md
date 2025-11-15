@@ -37,6 +37,10 @@ full_width: true
       <i class="fa-brands fa-github"></i>
       GitHub
     </a>
+    <a href="https://www.linkedin.com/in/yeongbin-kwon/" class="contact-btn linkedin-btn">
+      <i class="fa-brands fa-linkedin"></i>
+      LinkedIn
+    </a>
     
   </div>
 
