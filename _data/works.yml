@@ -1,0 +1,16 @@
+- title: Low-Cost Stereo Imaging of Coastal Waves
+  date: "2025"
+  description: Reconstructing coastal wave fields with affordable stereo rigs and analyzing breaking patterns.
+  image: /assets/img/stereo-imaging/project1.webp
+  url: /blog/research/stereo-imaging-coastal-waves/
+  tags:
+    - Coastal Engineering
+    - Computer Vision
+- title: LID Strategies for Stormwater Reduction and Reuse
+  date: "2025"
+  description: Evaluating low-impact development concepts for the SNU campus with SWMM-based design studies.
+  image: /assets/img/Substitute.png
+  url: /blog/research/lid-stormwater-strategies/
+  tags:
+    - Hydrology
+    - Urban Design

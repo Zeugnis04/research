@@ -81,6 +81,89 @@
   color: #e65100;
 }
 
+.works-section {
+  width: 90%;
+  margin: 3rem auto 0;
+}
+
+.works-header h2 {
+  margin-bottom: 0.25rem;
+}
+
+.works-header p {
+  margin-top: 0;
+  color: #666;
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.work-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  overflow: hidden;
+  text-decoration: none !important;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 18px rgba(0,0,0,0.12);
+}
+
+.work-card-image {
+  position: relative;
+  padding-top: 56%;
+  overflow: hidden;
+}
+
+.work-card-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.work-card-body {
+  padding: 1rem 1.25rem 1.25rem;
+}
+
+.work-card-body h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.work-card-description {
+  margin: 0;
+  color: #444;
+  min-height: 3.5rem;
+}
+
+.work-card-meta {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #777;
+}
+
+.work-card-tags {
+  text-align: right;
+}
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .hero-photo {

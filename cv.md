@@ -11,7 +11,7 @@ full_width: true
 <!-- Load icon sets if not already loaded -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-*[Download as PDF](assets/YeongbinKwonCV202509.pdf)*
+*[Download as PDF](assets/YeongbinKwonCV202511.pdf)*
 
 ## Contacts
 (+82) 10-8108-2719  
@@ -57,6 +57,9 @@ full_width: true
   <span class="date">2025.05 – 2025.12 <span class="location">(expected)</span></span>
 </div>
 <div class="location-block">Seoul National University Undergraduate Independent Research Grant</div>
+<ul>
+  <li>Using stereo imagery to reconstruct wave fields and analyze wave breaking phenomena in real coastal environments.</li>
+</ul>
 
 <div class="edu-header">
   <div class="edu-left">
@@ -65,6 +68,9 @@ full_width: true
   <span class="date">2025.09 – 2025.12 <span class="location">(expected)</span></span>
 </div>
 <div class="location-block">SNU Integrated Design of Civil Engineering Systems Course</div>
+<ul>
+  <li>Evaluating and comparing the performance of various LID strategies at the SNU campus, using SWMM simulations based on varied inputs.</li>
+</ul>
 
 
 
@@ -85,7 +91,7 @@ full_width: true
 </div>
 <ul>
   <li>Used AURORA, one of the most recent foundational models in climate, to explore weather dynamics and how perturbations affects the dynamics.</li>
-  <li>Worked with Prof. Upmanu Lall's group in the Department of Earth and Environmental Engineering and submitted two conference abstracts for AGU 2025.</li>
+  <li>Worked with Prof. Upmanu Lall's group in the Department of Earth and Environmental Engineering and submitted two conference abstracts for AGU 2025, currently writing on predictability of the model and perturbation concepts.</li>
 </ul>
 
 <!-- Trilateral Students Activity in Seoul -->
@@ -102,8 +108,7 @@ full_width: true
   Team leader of the Geotechnical Engineering group
 </div>
 <ul>
-  <li>Participated in a group seminar between Seoul National University, National Taiwan University, and University of Tokyo civil engineering students.</li>
-  <li>As the team leader of the Geotechnical Engineering group, led group discussions and presented the results in the final session.</li>
+  <li>Participated in a group seminar between Seoul National University, National Taiwan University, and University of Tokyo civil engineering students as the team leader of the Geotechnical Engineering group, leading discussions and presenting the final results.</li>
 </ul>
 
 <!-- Visiting Student -->
@@ -131,4 +136,4 @@ full_width: true
 
 ## Skills
 - **Languages**: Korean (native), English (native), Japanese (proficient and fluent)  
-- **Programming and Typesetting**: LaTeX, `Python`, `JavaScript`, `MATLAB`, `R`, `C`, `HTML/CSS`, Deep Learning
+- **Programming and Typesetting**: LaTeX, Python, MATLAB, R, C, HTML/CSS, Deep Learning

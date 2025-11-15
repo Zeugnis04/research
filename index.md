@@ -39,4 +39,30 @@ full_width: true
     </a>
     
   </div>
+
+  {% if site.data.works %}
+  <section class="works-section">
+    <div class="works-header">
+      <h2>Featured Work</h2>
+      <p>Recent projects and articles I'm actively developing.</p>
+    </div>
+    <div class="works-grid">
+      {% for work in site.data.works %}
+      <a class="work-card" href="{{ work.url | relative_url }}">
+        <div class="work-card-image">
+          <img src="{{ work.image | relative_url }}" alt="{{ work.title }} thumbnail">
+        </div>
+        <div class="work-card-body">
+          <h3>{{ work.title }}</h3>
+          {% if work.description %}<p class="work-card-description">{{ work.description }}</p>{% endif %}
+          <div class="work-card-meta">
+            {% if work.date %}<span class="work-card-date">{{ work.date }}</span>{% endif %}
+            {% if work.tags %}<span class="work-card-tags">{{ work.tags | join: ' • ' }}</span>{% endif %}
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
 </div>
