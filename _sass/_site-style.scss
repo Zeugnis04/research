@@ -1,4 +1,12 @@
 /* Override this file in your site to create any custom site-local CSS */
+
+/* Base theme variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 /* Homepage Hero Layout */
 .hero-image {
   margin: -1rem 0 2rem 0; /* negative top margin to pull up closer to header, auto left/right to center */
@@ -40,22 +48,22 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
-  background: #f8f9fa;
-  border: 1px solid #e9ecef;
+  background: var(--button-bg);
+  border: 1px solid var(--button-border);
   border-radius: 8px;
   text-decoration: none !important;
-  color: #333;
+  color: var(--text-color);
   font-weight: 500;
   transition: all 0.2s ease;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .contact-btn:hover {
-  background: #e9ecef;
-  border-color: #dee2e6;
+  background: var(--button-hover-bg);
+  border-color: var(--border-color);
   transform: translateY(-1px);
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  color: #333;
+  color: var(--text-color);
   text-decoration: none !important;
 }
 
@@ -98,7 +106,7 @@
 
 .works-header p {
   margin-top: 0;
-  color: #666;
+  color: var(--meta-color);
 }
 
 .works-grid {
@@ -111,8 +119,8 @@
 .work-card {
   display: flex;
   flex-direction: column;
-  background: #fff;
-  border: 1px solid #e6e6e6;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: 12px;
   box-shadow: 0 6px 14px rgba(0,0,0,0.08);
   overflow: hidden;
@@ -321,12 +329,12 @@
 .mini-sidebar {
   width: 260px;
   padding: 16px;
-  border: 1px solid #e6e6e6;
+  border: 1px solid var(--sidebar-border);
   border-radius: 12px;
-  background: #f2f2f2;
+  background: var(--sidebar-bg);
   box-shadow: 0 2px 8px rgba(0,0,0,.04);
   font-size: 18px;
-  color: #333;
+  color: var(--text-color);
 }
 
 .mini-sidebar .avatar {
@@ -905,7 +913,7 @@ main a,
 section a,
 .tufte-underline,
 .hover-tufte-underline:hover {
-  color: #111;
+  color: var(--link-color);
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.15em;
@@ -916,7 +924,7 @@ section a,
 article a:hover,
 main a:hover,
 section a:hover {
-  color: #006666;
+  color: var(--link-hover-color);
 }
 
 /* Optional WebKit support */
@@ -929,7 +937,7 @@ section a:hover {
 }
 
 header nav a {
-  color: #111;
+  color: var(--link-color);
   text-decoration: none !important; /* Ensure no underline */
   position: relative;
   transition: color 0.3s ease;
@@ -943,7 +951,7 @@ nav.group a.active {
 
 /* Hover color change */
 header nav a:hover {
-  color: #006666;
+  color: var(--link-hover-color);
 }
 
 /* Tufte-style animated underline */
@@ -962,36 +970,6 @@ header nav a::after {
 
 header nav a:hover::after {
   transform: scaleX(1);
-}
-
-@media (prefers-color-scheme: dark) {
-  /* NAV links (animated underline only) */
-  header nav a {
-    color: #64ffda;
-  }
-
-  header nav a::after {
-    background-color: currentColor; /* keeps underline matching */
-  }
-
-  header nav a:hover {
-    color: #64ffda;
-  }
-
-  /* BODY content links */
-  main a:not(header a):not(nav a),
-  article a:not(header a):not(nav a),
-  section a:not(header a):not(nav a),
-  .tufte-underline,
-  .hover-tufte-underline:hover {
-    color: #64ffda;
-  }
-
-  main a:hover,
-  article a:hover,
-  section a:hover {
-    color: #64ffda;
-  }
 }
 
 /* toggling */
@@ -1029,5 +1007,44 @@ details.practice p {
 @media screen and (max-width: 760px) {
   details.practice summary {
     width: 100%;
+  }
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background: var(--button-bg);
+  border: 2px solid var(--border-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.theme-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.theme-toggle:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .theme-toggle {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
   }
 }

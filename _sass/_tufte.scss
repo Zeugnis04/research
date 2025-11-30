@@ -12,12 +12,13 @@ body {
     padding-left: 12.5%;
     font-family: optima-nova-lt-pro, sans-serif;
     font-variant-ligatures: common-ligatures;
-    background-color: #fafafa;
-    color: #111;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     max-width: 1400px;
     counter-reset: sidenote-counter;
+    transition: background-color 0.3s ease, color 0.3s ease;
     // Trim both sides to the capital letters
-    // text-box: trim-both cap alphabetic; 
+    // text-box: trim-both cap alphabetic;
 }
 /*<---- Various Languages ---->*/
 

@@ -41,7 +41,11 @@ full_width: true
       <i class="fa-brands fa-linkedin"></i>
       LinkedIn
     </a>
-    
+    <a href="https://scholar.google.com/citations?user=KEQmFeUAAAAJ" class="contact-btn scholar-btn">
+      <i class="fa-solid fa-graduation-cap"></i>
+      Google Scholar
+    </a>
+
   </div>
 
   {% if site.data.works %}

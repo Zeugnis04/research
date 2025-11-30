@@ -72,4 +72,42 @@
 
   {% feed_meta %}{% comment %} Insert link to RSS feed via jekyll-feed plugin {% endcomment %}
   <link rel="icon" href="assets/img/Substitute.png">
+
+  <!-- Theme Toggle Script -->
+  <script>
+    // Initialize theme - default to light mode
+    (function() {
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+
+    // Theme toggle functionality
+    window.addEventListener('DOMContentLoaded', function() {
+      const toggleButton = document.getElementById('theme-toggle');
+      const toggleIcon = document.querySelector('.theme-toggle-icon');
+
+      if (!toggleButton || !toggleIcon) {
+        return;
+      }
+
+      // Update text based on current theme
+      function updateIcon() {
+        const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+        toggleIcon.textContent = currentTheme === 'dark' ? 'Bright' : 'Dark';
+      }
+
+      // Toggle theme
+      function toggleTheme() {
+        const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateIcon();
+      }
+
+      toggleButton.addEventListener('click', toggleTheme);
+      updateIcon();
+    });
+  </script>
 </head>
