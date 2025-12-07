@@ -161,7 +161,7 @@ body {
 
 .work-card-description {
   margin: 0;
-  color: #444;
+  color: var(--muted-text-color);
   min-height: 3.5rem;
 }
 
@@ -171,7 +171,7 @@ body {
   flex-wrap: wrap;
   margin-top: 1rem;
   font-size: 0.95rem;
-  color: #777;
+  color: var(--meta-color);
 }
 
 .work-card-tags {
@@ -270,14 +270,14 @@ body {
 .location-inline {
   display: none; /* hidden by default (wide view) */
   font-size: 1.12rem;
-  color: #666;
+  color: var(--meta-color);
   margin-left: 0.8rem;
   font-style: italic;
 }
 
 .location-block {
   font-size: 1.12rem;
-  color: #666;
+  color: var(--meta-color);
   font-style: italic;
 }
 
@@ -294,7 +294,7 @@ body {
 
 .location {
   font-size: 0.80em;
-  color: #666;
+  color: var(--meta-color);
   margin-bottom: 0.2rem;
 }
 
@@ -356,7 +356,7 @@ body {
 }
 
 .mini-sidebar .bio {
-  color: #666;
+  color: var(--muted-text-color);
   margin: 0 0 12px;
   line-height: 1.4;
   // text-align: center;
@@ -381,7 +381,7 @@ body {
 .mini-sidebar i {
   width: 18px;
   text-align: center;
-  color: #444;
+  color: var(--muted-text-color);
 }
 
 .mini-sidebar a {
@@ -466,18 +466,18 @@ body {
     font-size: 1.2em;
   }
   
-  .post-meta {
-    font-size: 0.85em;
-    color: #666;
-    margin-bottom: 0.4em;
-  }
-  
-  .post-excerpt {
-    margin: 0;
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-  }
+.post-meta {
+  font-size: 0.85em;
+  color: var(--meta-color);
+  margin-bottom: 0.4em;
+}
+
+.post-excerpt {
+  margin: 0;
+  color: var(--text-color);
+  font-size: 1em;
+  line-height: 1.4;
+}
 
   .tag {
     display: inline-block;
@@ -569,7 +569,7 @@ body {
   
   .album-info p {
     font-size: 0.85rem;
-    color: #555;
+    color: var(--muted-text-color);
   }
 
   .album-link {
@@ -627,7 +627,7 @@ body {
   margin: 0 4px 4px 0;
   border-radius: 4px;
   // background: #f2f2f2;
-  color: #333;
+  color: var(--text-color);
   white-space: nowrap;
   vertical-align: middle;
   transition: background 0.2s ease, color 0.2s ease;
@@ -640,7 +640,7 @@ body {
 
   .meta-tags {
     font-size: 0.85em;
-    color: #666;
+    color: var(--meta-color);
     margin-bottom: 1em;
   }
   
@@ -651,13 +651,13 @@ body {
     margin: 0 0.1px 4px 0;
     border-radius: 4px;
     font-family: monospace;
-    color: #333;
+    color: var(--text-color);
     text-decoration: none;
 
     .meta-tags {
         font-size: 0.9em;
         margin-bottom: 1.2em;
-        color: #444;
+        color: var(--muted-text-color);
       }
       
       .post-tags {

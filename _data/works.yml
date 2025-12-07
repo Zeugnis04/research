@@ -2,7 +2,7 @@
   date: "2025"
   description: Reconstructing coastal wave fields with affordable stereo rigs and analyzing breaking patterns.
   image: /assets/img/stereo-imaging/project1.webp
-  url: /blog/research/stereo-imaging-coastal-waves/
+  post_slug: stereo-imaging-coastal-waves
   tags:
     - Coastal Engineering
     - Computer Vision
@@ -10,7 +10,7 @@
   date: "2025"
   description: Evaluating low-impact development concepts for the SNU campus with SWMM-based design studies.
   image: /assets/img/Substitute.png
-  url: /blog/research/lid-stormwater-strategies/
+  post_slug: lid-stormwater-strategies
   tags:
     - Hydrology
     - Urban Design

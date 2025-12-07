@@ -10,7 +10,7 @@ category: research
 
 {% maincolumn 'assets/img/stereo-imaging/PosterFinal1Draft.png' 'Thesis Poster Draft' %}
 
-[Download Poster PDF (Draft)](/assets/img/stereo-imaging/PosterFinal1Draft.pdf){:target="_blank"}
+[Download Poster PDF (Draft)]({{ '/assets/img/stereo-imaging/PosterFinal1Draft.pdf' | relative_url }}){:target="_blank"}
 
 {% maincolumn 'assets/img/stereo-imaging/project1.webp' 'Stereo Wave Images example' %}
 

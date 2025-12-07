@@ -8,7 +8,7 @@ description: Research
 show_author: true
 google_analytics: G-QGXVPV6SN8
 markdown: kramdown
-baseurl: "/academic"
+baseurl: ""
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 highlighter: rouge
 # permalink: /blog/:categories/:year/:month/:day/:title.html

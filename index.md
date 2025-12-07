@@ -13,7 +13,7 @@ full_width: true
 
 <!-- Hero Image Section -->
 <div class="hero-image">
-  <img src="assets/img/YBKwon.jpg" alt="Yeongbin Kwon" class="hero-photo">
+  <img src="{{ 'assets/img/YBKwon.jpg' | relative_url }}" alt="Yeongbin Kwon" class="hero-photo">
 </div>
 
 <!-- Main content -->
@@ -56,7 +56,21 @@ full_width: true
     </div>
     <div class="works-grid">
       {% for work in site.data.works %}
-      <a class="work-card" href="{{ work.url | relative_url }}">
+      {% assign work_link = work.url %}
+      {% if work.post_slug %}
+        {% assign linked_post = site.posts | where: "slug", work.post_slug | first %}
+        {% if linked_post %}
+          {% assign work_link = linked_post.url %}
+        {% endif %}
+      {% endif %}
+      {% assign work_href = nil %}
+      {% if work_link %}
+      {% if work_link contains '://' %}
+        {% assign work_href = work_link %}
+      {% else %}
+        {% assign work_href = work_link | relative_url %}
+      {% endif %}
+      <a class="work-card" href="{{ work_href }}">
         <div class="work-card-image">
           <img src="{{ work.image | relative_url }}" alt="{{ work.title }} thumbnail">
         </div>
@@ -69,6 +83,7 @@ full_width: true
           </div>
         </div>
       </a>
+      {% endif %}
       {% endfor %}
     </div>
   </section>
