@@ -7,6 +7,42 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+figure img,
+.marginnote img {
+  background: var(--media-bg);
+  border: 1px solid var(--media-border);
+  border-radius: 8px;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+mjx-container[jax='CHTML'] {
+  font-size: 0.8em;
+  color: var(--text-color);
+}
+
+mjx-container[jax='CHTML'] math {
+  font-family: 'Latin Modern Math', 'STIX Two Math', 'Cambria Math', 'Times New Roman', serif;
+}
+
+mjx-container[jax='CHTML'][display='true'] {
+  display: block;
+  width: 100%;
+  max-width: 55%;
+  margin: 1.5rem 0;
+  padding: 0.35rem 0;
+  text-align: left;
+}
+
+mjx-container[jax='CHTML'][display='false'] {
+  margin: 0 0.15em;
+}
+
+@media (max-width: 760px) {
+  mjx-container[jax='CHTML'][display='true'] {
+    max-width: 100%;
+  }
+}
+
 /* Homepage Hero Layout */
 .hero-image {
   margin: -1rem 0 2rem 0; /* negative top margin to pull up closer to header, auto left/right to center */

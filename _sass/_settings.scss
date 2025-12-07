@@ -27,6 +27,8 @@ $link-style: color; // choices are 'color' or 'underline'. Default is color usin
   --button-bg: #f8f9fa;
   --button-border: #e9ecef;
   --button-hover-bg: #e9ecef;
+  --media-bg: #fff;
+  --media-border: #e0e0e0;
   --meta-color: #666;
   --sidebar-bg: #f2f2f2;
   --sidebar-border: #e6e6e6;
@@ -47,9 +49,10 @@ body.dark-mode {
   --button-bg: #2a2a2a;
   --button-border: #444;
   --button-hover-bg: #333;
+  --media-bg: rgba(255,255,255,0.04);
+  --media-border: #333;
   --meta-color: #aaa;
   --sidebar-bg: #252525;
   --sidebar-border: #333;
   --code-bg: #2a2a2a;
 }
-

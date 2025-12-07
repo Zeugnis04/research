@@ -324,10 +324,7 @@ p.byline {
     // font-size: 1.4rem;
     display: block;
     line-height: 1;
-    color: rgba(0, 0, 0, 0.6)
-}
-@media (prefers-color-scheme: dark) {
-    p.byline { color: rgba(255, 255, 255, 0.6); }
+    color: var(--meta-color);
 }
 
 p.margin-maker {

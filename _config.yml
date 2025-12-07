@@ -11,6 +11,11 @@ markdown: kramdown
 baseurl: ""
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 highlighter: rouge
+kramdown:
+  input: GFM
+  math_engine: mathjax
+  math_engine_opts:
+    preview: false
 # permalink: /blog/:categories/:year/:month/:day/:title.html
 permalink: /blog/:categories/:slug
 timezone: Asia/Seoul
