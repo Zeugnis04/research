@@ -214,6 +214,18 @@ mjx-container[jax='CHTML'][display='false'] {
   text-align: right;
 }
 
+.news-card-links {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-weight: 600;
+}
+
+.news-card-links a {
+  text-decoration: underline;
+}
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .hero-photo {

@@ -1,11 +1,19 @@
 - title: Low-Cost Stereo Imaging of Coastal Waves
   date: "2025"
-  description: Reconstructing coastal wave fields with affordable stereo rigs and analyzing breaking patterns.
+  description: Reconstructing coastal wave fields with affordable stereo rigs, analyzing breaking patterns, and earning the Best Bachelor&rsquo;s Thesis Award (Dec 2025).
   image: /assets/img/stereo-imaging/project1.webp
   post_slug: stereo-imaging-coastal-waves
   tags:
     - Coastal Engineering
     - Computer Vision
+- title: Weather Jiu-Jitsu Posters for AGU25
+  date: "2025"
+  description: Presenting two AGU25 posters on steering atmospheric rivers and tropical cyclones with the AURORA foundation model and adaptive perturbations.
+  image: /assets/img/weatherjiujitsu/WeatherJiuJitsuSteeringTCs.png
+  post_slug: weather-jiu-jitsu-agu25-posters
+  tags:
+    - Climate
+    - Deep Learning
 - title: LID Strategies for Stormwater Reduction and Reuse
   date: "2025"
   description: Evaluating low-impact development concepts for the SNU campus with SWMM-based design studies.

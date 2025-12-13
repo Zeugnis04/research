@@ -48,6 +48,43 @@ full_width: true
 
   </div>
 
+  <section class="news-section">
+    <div class="news-header">
+      <h2>News</h2>
+      <p>Latest milestones and announcements.</p>
+    </div>
+    <div class="works-grid news-grid">
+      <div class="work-card news-card">
+        <div class="work-card-image">
+          <img src="{{ 'assets/news/Award.jpg' | relative_url }}" alt="Best Bachelor&rsquo;s Thesis Award ceremony">
+        </div>
+        <div class="work-card-body">
+          <p class="work-card-date">December 2025</p>
+          <h3>Best Bachelor&rsquo;s Thesis Award</h3>
+
+          <p class="work-card-description">Recognized for the calibration-free stereo imaging thesis presented to the SNU Department of Civil and Environmental Engineering.</p>
+          <div class="news-card-links">
+            <a href="#work-stereo-imaging-coastal-waves">Featured project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-card news-card">
+        <div class="work-card-image">
+          <img src="{{ 'assets/img/weatherjiujitsu/WeatherJiuJitsuTowardControlling.png' | relative_url }}" alt="Weather Jiu-Jitsu atmospheric rivers poster">
+        </div>
+        <div class="work-card-body">
+          <p class="work-card-date">December 2025</p>
+          <h3>Presenting at AGU25</h3>
+          <p class="work-card-description">Selected to present two posters on Weather Jiu-Jitsu and adaptive perturbation strategies at the AGU25 Annual Meeting.</p>
+          <div class="news-card-links">
+            <a href="{{ '/blog/research/weather-jiu-jitsu-agu25-posters' | relative_url }}">Poster details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   {% if site.data.works %}
   <section class="works-section">
     <div class="works-header">
@@ -70,7 +107,7 @@ full_width: true
       {% else %}
         {% assign work_href = work_link | relative_url %}
       {% endif %}
-      <a class="work-card" href="{{ work_href }}">
+      <a class="work-card" id="work-{{ work.post_slug | default: work.title | slugify }}" href="{{ work_href }}">
         <div class="work-card-image">
           <img src="{{ work.image | relative_url }}" alt="{{ work.title }} thumbnail">
         </div>

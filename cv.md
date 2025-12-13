@@ -11,10 +11,10 @@ full_width: true
 <!-- Load icon sets if not already loaded -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-*[Download as PDF](assets/YeongbinKwonCV202511.pdf)*
+*[Download as PDF](assets/YeongbinKwonCV202512.pdf)*
 
 ## Contacts
-[ybkwon04@snu.ac.kr](mailto:ybkwon04@snu.ac.kr) • [ybkwon04@gmail.com](mailto:ybkwon04@gmail.com)  
+[ybkwon04@snu.ac.kr](mailto:ybkwon04@snu.ac.kr) • [ybkwon04@gmail.com](mailto:ybkwon04@gmail.com) • [linkedin.com/in/yeongbin-kwon](https://www.linkedin.com/in/yeongbin-kwon/)  
 
 ## Education
 
@@ -31,6 +31,7 @@ full_width: true
   Undergraduate in <a href="https://cee.snu.ac.kr/english/">Civil and Environmental Engineering</a>
 </div>
 <ul>
+  <li>Graduated with bachelor&rsquo;s thesis <em>Calibration-Free Stereo Imaging for Coastal Wave Field Reconstruction and Quantification of Wave Breaking</em>; selected as the Best Bachelor&rsquo;s Thesis of Fall 2025.</li>
   <li>Relevant Coursework: Hydrology, Hydraulics and Laboratory, Water Resources Engineering, Coastal Engineering and Laboratory, Open Channel Hydraulics, Wave Mechanics</li>
 </ul>
 
@@ -46,6 +47,16 @@ full_width: true
 <div class="cvtitle">
   Early Graduate — Graduated a year earlier than the usual three-year program
 </div>
+
+## Posters and Presentations
+
+<ol>
+  <li>Moyan Liu, Qin Huang, Upmanu Lall, <strong>Yeongbin Kwon</strong>, and Hyun-Han Kwon. <em>Weather Jiu-Jitsu: Toward Controlling Atmospheric Rivers with Deep Learning Foundation Models and Adaptive Perturbation.</em> AGU25 Annual Meeting, 2025. (Poster presentation)</li>
+  <li>Qin Huang, Moyan Liu, Upmanu Lall, <strong>Yeongbin Kwon</strong>, Hyun-Han Kwon, and Yuan Liu. <em>Weather Jiu-Jitsu: Steering Tropical Cyclones with Small Perturbations of the Jet Stream in Experiments with Deep Learning Foundation Models.</em> AGU25 Annual Meeting, 2025. (Poster presentation)</li>
+  <li>Upmanu Lall, Qin Huang, Moyan Liu, Hyun-Han Kwon, and <strong>Yeongbin Kwon</strong>. <em>Weather Jiu Jitsu: Adaptive Chaos Control with Deep Learning of Atmospheric Dynamics to leverage the power of the atmospheric circulation with nudges to move or defuse storms and avert catastrophic flooding.</em> AGU25 Annual Meeting, 2025. (Oral presentation by Upmanu Lall)</li>
+  <li>Upmanu Lall, Moyan Liu, Qin Huang, Hyun-Han Kwon, Adam Nayak, <strong>Yeongbin Kwon</strong>, and Mengjie Zhang. <em>Weather Jiu Jitsu: A 21st century paradigm to leverage nature’s power to mitigate some Compound, Concurrent, and Cascading Weather Hazards in a Changing Climate.</em> AGU25 Annual Meeting, 2025. (Oral presentation by Upmanu Lall)</li>
+  <li><strong>Yeongbin Kwon</strong>. <em>Calibration-Free Stereo Imaging for Coastal Wave Field Reconstruction and Quantification of Wave Breaking.</em> SNU Civil and Environmental Engineering Bachelor’s Thesis Presentation, 2025. (Poster presentation)</li>
+</ol>
 
 ## Projects
 
@@ -69,6 +80,7 @@ full_width: true
 <div class="location-block">SNU Integrated Design of Civil Engineering Systems Course</div>
 <ul>
   <li>Evaluating and comparing the performance of various LID strategies at the SNU campus, using SWMM simulations based on varied inputs.</li>
+  <li>Selected as Outstanding Graduation Project (Top 3).</li>
 </ul>
 
 
@@ -131,6 +143,20 @@ full_width: true
 <div class="cv-awards">
   <div class="edu-header award-entry">
     <div class="edu-left">
+      <strong>Best Bachelor&rsquo;s Thesis Award</strong>
+    </div>
+    <span class="date">2025.12</span>
+  </div>
+
+  <div class="edu-header award-entry">
+    <div class="edu-left">
+      <strong>Outstanding Graduation Project Award</strong>
+    </div>
+    <span class="date">2025.12</span>
+  </div>
+
+  <div class="edu-header award-entry">
+    <div class="edu-left">
       <strong>Merit-Based Tuition Scholarship</strong>
     </div>
     <span class="date">Fall 2025</span>
@@ -145,7 +171,7 @@ full_width: true
 
   <div class="edu-header award-entry">
     <div class="edu-left">
-      <strong>Global Short-Term Study Abroad Scholarship</strong>
+      <strong>Short-Term Study Abroad Scholarship</strong>
     </div>
     <span class="date">Spring 2024</span>
   </div>
@@ -159,7 +185,7 @@ full_width: true
 
   <div class="edu-header award-entry">
     <div class="edu-left">
-      <strong>Kwanak Scholarship</strong>
+      <strong>Gwanak Scholarship (Merit-Based)</strong>
     </div>
     <span class="date">Fall 2023</span>
   </div>
@@ -172,7 +198,7 @@ full_width: true
     <strong>Undergraduate Mentor</strong>
     <span class="location-inline">Seoul National University Social Responsibility</span>
   </div>
-  <span class="date">2025.05 – Present</span>
+  <span class="date">2025.05 – 2025.12</span>
 </div>
 <div class="location-block">Seoul National University Social Responsibility</div>
 <ul>
