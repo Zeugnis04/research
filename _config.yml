@@ -20,6 +20,7 @@ kramdown:
 permalink: /blog/:categories/:slug
 timezone: Asia/Seoul
 excerpt_separator: <!--more-->
+future: true
 exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
 plugins:
   - jekyll-feed

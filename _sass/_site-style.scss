@@ -226,6 +226,27 @@ mjx-container[jax='CHTML'][display='false'] {
   text-decoration: underline;
 }
 
+.news-card h3 {
+  font-size: 1.45rem;
+  margin-bottom: 0.15rem;
+}
+
+.news-card .work-card-date {
+  margin: 0 0 0.45rem;
+  color: var(--meta-color);
+  font-size: 1rem;
+  display: block;
+}
+
+.news-card .work-card-description {
+  margin-top: 0;
+  line-height: 1.45;
+}
+
+.news-card .news-card-links {
+  margin-top: 0.65rem;
+}
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .hero-photo {

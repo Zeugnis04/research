@@ -54,34 +54,34 @@ full_width: true
       <p>Latest milestones and announcements.</p>
     </div>
     <div class="works-grid news-grid">
-      <div class="work-card news-card">
+      <a class="work-card news-card" href="#work-stereo-imaging-coastal-waves">
         <div class="work-card-image">
-          <img src="{{ 'assets/news/Award.jpg' | relative_url }}" alt="Best Bachelor&rsquo;s Thesis Award ceremony">
+          <img src="{{ 'assets/news/Award.webp' | relative_url }}" alt="Best Bachelor&rsquo;s Thesis Award ceremony">
         </div>
         <div class="work-card-body">
-          <p class="work-card-date">December 2025</p>
           <h3>Best Bachelor&rsquo;s Thesis Award</h3>
+          <p class="work-card-date">December 2025</p>
 
           <p class="work-card-description">Recognized for the calibration-free stereo imaging thesis presented to the SNU Department of Civil and Environmental Engineering.</p>
           <div class="news-card-links">
-            <a href="#work-stereo-imaging-coastal-waves">Featured project</a>
+            <span>Featured project</span>
           </div>
         </div>
-      </div>
+      </a>
 
-      <div class="work-card news-card">
+      <a class="work-card news-card" href="{{ '/blog/research/weather-jiu-jitsu-agu25-posters' | relative_url }}">
         <div class="work-card-image">
-          <img src="{{ 'assets/img/weatherjiujitsu/WeatherJiuJitsuTowardControlling.png' | relative_url }}" alt="Weather Jiu-Jitsu atmospheric rivers poster">
+          <img src="{{ 'assets/img/weatherjiujitsu/WeatherJiuJitsuTowardControlling.webp' | relative_url }}" alt="Weather Jiu-Jitsu atmospheric rivers poster">
         </div>
         <div class="work-card-body">
-          <p class="work-card-date">December 2025</p>
           <h3>Presenting at AGU25</h3>
+          <p class="work-card-date">December 2025</p>
           <p class="work-card-description">Selected to present two posters on Weather Jiu-Jitsu and adaptive perturbation strategies at the AGU25 Annual Meeting.</p>
           <div class="news-card-links">
-            <a href="{{ '/blog/research/weather-jiu-jitsu-agu25-posters' | relative_url }}">Poster details</a>
+            <span>Poster details</span>
           </div>
         </div>
-      </div>
+      </a>
     </div>
   </section>
 

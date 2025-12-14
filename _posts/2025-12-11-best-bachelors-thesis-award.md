@@ -6,7 +6,7 @@ tags: [awards, snu, thesis]
 category: news
 ---
 
-{% maincolumn 'assets/news/Award.jpg' 'Receiving the Best Bachelor’s Thesis Award' %}
+{% maincolumn 'assets/news/Award.webp' 'Receiving the Best Bachelor’s Thesis Award' %}
 
 ## Recognition
 In December 2025, the Seoul National University Department of Civil and Environmental Engineering selected my bachelor’s thesis, <em>Calibration-Free Stereo Imaging for Coastal Wave Field Reconstruction and Quantification of Wave Breaking</em>, for the <strong>Best Bachelor’s Thesis Award</strong>. The work demonstrates a low-cost, calibration-free stereo imaging framework that reconstructs nearshore wave fields and quantifies wave breaking dynamics in real coastal environments.
