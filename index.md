@@ -19,7 +19,7 @@ full_width: true
 <!-- Main content -->
 <div class="homepage-content">
   <h1>About Me</h1>
-  <p>I am Yeongbin Kwon (Hangul: <span lang="ko">권영빈</span>, <span lang="ja">漢字：權榮彬</span>, IPA: <span lang="ipa">[kʷʌn.jʌŋ.bin]</span>), an undergraduate in Civil and Environmental Engineering at Seoul National University, focusing on environmental fluid mechanics, coastal processes, and the application of machine learning to climate and energy systems.</p>
+  <p>I am Yeongbin Kwon (Hangul: <span lang="ko">권영빈</span>, <span lang="ja">漢字：權榮彬</span>, IPA: <span lang="ipa">[kʷʌn.jʌŋ.bin]</span>), B.S. in Civil and Environmental Engineering at Seoul National University, focusing on environmental fluid mechanics, coastal processes, and the application of machine learning to climate and energy systems.</p>
 
   <p>My recent work includes developing low-cost stereo imaging methods to reconstruct nearshore wave fields and analyzing wave breaking and conducting research on foundational climate forecasting models using ERA5 reanalysis data. I am passionate about combining physics-based understanding with data-driven techniques to address challenges in climate prediction, renewable energy forecasting, and coastal engineering.</p>
 
@@ -54,9 +54,23 @@ full_width: true
       <p>Latest milestones and announcements.</p>
     </div>
     <div class="works-grid news-grid">
+      <a class="work-card news-card" href="cv.html">
+        <div class="work-card-image">
+          <img src="{{ 'assets/news/graduation.webp' | relative_url }}" alt="Graduation ceremony" loading="lazy">
+        </div>
+        <div class="work-card-body">
+          <h3>Graduated B.S. with Honors</h3>
+          <p class="work-card-date">February 2026</p>
+          <p class="work-card-description">Graduated summa cum laude from Seoul National University, Department of Civil and Environmental Engineering.</p>
+          <div class="news-card-links">
+            <span>View CV</span>
+          </div>
+        </div>
+      </a>
+
       <a class="work-card news-card" href="#work-stereo-imaging-coastal-waves">
         <div class="work-card-image">
-          <img src="{{ 'assets/news/Award.webp' | relative_url }}" alt="Best Bachelor&rsquo;s Thesis Award ceremony">
+          <img src="{{ 'assets/news/Award.webp' | relative_url }}" alt="Best Bachelor&rsquo;s Thesis Award ceremony" loading="lazy">
         </div>
         <div class="work-card-body">
           <h3>Best Bachelor&rsquo;s Thesis Award</h3>
@@ -71,7 +85,7 @@ full_width: true
 
       <a class="work-card news-card" href="{{ '/blog/research/weather-jiu-jitsu-agu25-posters' | relative_url }}">
         <div class="work-card-image">
-          <img src="{{ 'assets/img/weatherjiujitsu/WeatherJiuJitsuTowardControlling.webp' | relative_url }}" alt="Weather Jiu-Jitsu atmospheric rivers poster">
+          <img src="{{ 'assets/img/weatherjiujitsu/WeatherJiuJitsuTowardControlling.webp' | relative_url }}" alt="Weather Jiu-Jitsu atmospheric rivers poster" loading="lazy">
         </div>
         <div class="work-card-body">
           <h3>Presenting at AGU25</h3>

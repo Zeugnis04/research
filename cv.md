@@ -11,7 +11,7 @@ full_width: true
 <!-- Load icon sets if not already loaded -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-*[Download as PDF](assets/YeongbinKwonCV202512.pdf)*
+*[Download as PDF](assets/YeongbinKwonCV202602.pdf)*
 
 ## Contacts
 [ybkwon04@snu.ac.kr](mailto:ybkwon04@snu.ac.kr) • [ybkwon04@gmail.com](mailto:ybkwon04@gmail.com) • [linkedin.com/in/yeongbin-kwon](https://www.linkedin.com/in/yeongbin-kwon/)  
@@ -23,14 +23,16 @@ full_width: true
     <strong><a href="https://en.snu.ac.kr/index.html">Seoul National University</a></strong>
     <span class="location-inline">Seoul, Republic of Korea</span>
   </div>
-  <span class="date">2022.03 – 2026.02 <span class="location">(expected)</span></span>
+  <span class="date">2022.03 – 2026.02</span>
 </div>
 <div class="location-block">Seoul, Republic of Korea</div>
 
 <div class="cvtitle">
-  Undergraduate in <a href="https://cee.snu.ac.kr/english/">Civil and Environmental Engineering</a>
+  Bachelor of Science in <a href="https://cee.snu.ac.kr/english/">Civil and Environmental Engineering</a>
 </div>
 <ul>
+  <li>Graduated with honors: <em>summa cum laude</em></li>
+  <li>Received Outstanding Undergraduate Student Commendation by the Korean Society of Coastal Disaster Prevention.</li>
   <li>Graduated with bachelor&rsquo;s thesis <em>Calibration-Free Stereo Imaging for Coastal Wave Field Reconstruction and Quantification of Wave Breaking</em>; selected as the Best Bachelor&rsquo;s Thesis of Fall 2025.</li>
   <li>Relevant Coursework: Hydrology, Hydraulics and Laboratory, Water Resources Engineering, Coastal Engineering and Laboratory, Open Channel Hydraulics, Wave Mechanics</li>
 </ul>
@@ -48,6 +50,12 @@ full_width: true
   Early Graduate — Graduated a year earlier than the usual three-year program
 </div>
 
+## Publications
+
+<ol>
+  <li>Qin Huang, Moyan Liu, <strong>Yeongbin Kwon</strong>, and Upmanu Lall. <em>Evaluating the Predictability of Selected Weather Extremes with Aurora, an AI Weather Forecast Model.</em> JGR Machine Learning and Computation, 2026. (to be submitted soon)</li>
+</ol>
+
 ## Posters and Presentations
 
 <ol>
@@ -62,11 +70,11 @@ full_width: true
 
 <div class="edu-header">
   <div class="edu-left">
-    <strong><a href="blog/research/stereo-imaging-coastal-waves">Low-Cost Stereo Imaging for Coastal Wave Field Reconstruction and Quantification of Wave Breaking</a></strong>
+    <strong><a href="blog/research/stereo-imaging-coastal-waves">Calibration-Free Stereo Imaging for Coastal Wave Field Reconstruction and Quantification of Wave Breaking</a></strong>
   </div>
-  <span class="date">2025.05 – 2025.12 <span class="location">(expected)</span></span>
+  <span class="date">2025.05 – 2025.12</span>
 </div>
-<div class="location-block">Seoul National University Undergraduate Independent Research Grant</div>
+<div class="location-block">SNU College Undergraduate Independent Research Grant</div>
 <ul>
   <li>Using stereo imagery to reconstruct wave fields and analyze wave breaking phenomena in real coastal environments.</li>
 </ul>
@@ -75,7 +83,7 @@ full_width: true
   <div class="edu-left">
     <strong><a href="blog/research/lid-stormwater-strategies">Low Impact Development (LID) Strategies for Stormwater Reduction and Reuse on Campus</a></strong>
   </div>
-  <span class="date">2025.09 – 2025.12 <span class="location">(expected)</span></span>
+  <span class="date">2025.09 – 2025.12</span>
 </div>
 <div class="location-block">SNU Integrated Design of Civil Engineering Systems Course</div>
 <ul>
@@ -141,6 +149,14 @@ full_width: true
 ## Awards and Honors
 
 <div class="cv-awards">
+  <div class="edu-header award-entry">
+    <div class="edu-left">
+      <strong>Outstanding Undergraduate Student Commendation</strong>
+      <span style="color: var(--meta-color); font-size: 1.12rem;"> &nbsp;|&nbsp; Korean Society of Coastal Disaster Prevention</span>
+    </div>
+    <span class="date">2026.02</span>
+  </div>
+
   <div class="edu-header award-entry">
     <div class="edu-left">
       <strong>Best Bachelor&rsquo;s Thesis Award</strong>
