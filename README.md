@@ -20,7 +20,7 @@ The default public URL is `https://zeugnis04.github.io/research/`. For a custom 
 - Homepage: `src/pages/index.astro`
 - Featured projects: `src/lib/projects.ts`
 - Research and news articles: `src/content/posts/`
-- CV text: `src/content/cv.mdx`; PDF: `public/assets/YeongbinKwonCV202602.pdf`
+- CV text: `src/content/cv.mdx`; PDF: `public/assets/YeongbinKwonCV202609.pdf`
 - Theme, typography, and responsive styles: `src/styles/global.css`
 - Adobe Fonts kit and shared header/footer: `src/layouts/BaseLayout.astro`
 

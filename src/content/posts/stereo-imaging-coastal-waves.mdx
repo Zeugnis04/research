@@ -12,12 +12,18 @@ import { url as siteUrl } from "@/lib/site";
 
 ### Research Poster
 
+<Gallery
+  base="stereo-imaging"
+  targetLineRatio={100}
+  maxPerLine={2}
+  images={[
+    { src: "PosterFinal1Draft.png", caption: "Thesis Poster Draft" },
+    { src: "project1.webp", caption: "Stereo wave images example" },
+  ]}
+/>
 
-<Gallery images={[{"src": "stereo-imaging/PosterFinal1Draft.png", "caption": "Thesis Poster Draft"}]} />
-<a href={siteUrl("/assets/img/stereo-imaging/PosterFinal1Draft.pdf")}> Download Poster PDF (Draft)</a>
+<a href={siteUrl("/assets/img/stereo-imaging/PosterFinal1Draft.pdf")}>Download Poster PDF (Draft)</a>
 
-
-<Gallery images={[{"src": "stereo-imaging/project1.webp", "caption": "Stereo Wave Images example"}]} />
 ## Project Overview
 
 This research project, funded by the Seoul National University Undergraduate Independent Research Grant Program, focuses on developing affordable stereo vision systems for monitoring nearshore wave fields and quantifying wave breaking events. (KRW 3,000,000)
@@ -44,17 +50,20 @@ Traditional wave measurement instruments such as wave gauges and acoustic Dopple
 
 ## Photos
 
-Here are some photos from the field experiment.
+Ground control points are surveyed using RTK devices and deployed for georeferencing. After 3D reconstruction, we obtain a 3D point cloud of wave fields, frame by frame.
 
+<Gallery
+  base="stereo-imaging"
+  targetLineRatio={100}
+  maxPerLine={2}
+  images={[
+    { src: "IMG_4112_111032.webp", caption: "Camera deployed near the sensor" },
+    { src: "IMG_4089_111105.webp", caption: "Ground control points" },
+    { src: "project1_2.webp", caption: "Stereo reconstruction example" },
+    { src: "IMG_4045_111132.webp", caption: "Waves breaking at Manlipo, South Korea" },
+  ]}
+/>
 
-<Gallery images={[{"src": "stereo-imaging/IMG_4112_111032.webp", "caption": "Camera deployed near the sensor"}]} />
-First, Ground control points are surveyed using RTK devices and deployed for georeferencing purposes.
-
-<Gallery images={[{"src": "stereo-imaging/IMG_4089_111105.webp", "caption": "Ground Control Points"}]} />
-After 3D reconstruction, we are able to obtain a 3D point cloud of wave fields, frame by frame. 
-
-
-<Gallery images={[{"src": "stereo-imaging/project1_2.webp", "caption": "Stereo Reconstruction example"}, {"src": "stereo-imaging/IMG_4045_111132.webp", "caption": "Waves breaking at Manlipo, South Korea"}]} />
 ## Expected Outcomes
 
 - Development of low-cost stereo imaging system for coastal wave monitoring

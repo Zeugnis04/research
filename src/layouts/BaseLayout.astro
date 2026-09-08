@@ -45,7 +45,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header shell">
-    <a class="wordmark" href={url()} aria-label="Yeongbin Kwon home"><span>Yeongbin Kwon</span></a>
+    <a class="wordmark" href={url()} aria-label="Yeongbin Kwon home"><span class="wordmark-text" aria-hidden="true"><span class="wordmark-initial">y</span><span class="wordmark-reveal"><span>eong</span></span>b<span class="wordmark-reveal"><span>in&nbsp;</span></span><span class="wordmark-initial">k</span><span class="wordmark-reveal"><span>won</span></span></span></a>
     <div class="header-actions">
       <nav aria-label="Main navigation"><a href={url()} aria-current={active === 'about' ? 'page' : undefined}>About</a><a href={url('research/')} aria-current={active === 'research' ? 'page' : undefined}>Research</a><a href={url('blog/blog-list/')} aria-current={active === 'notes' ? 'page' : undefined}>Notes</a><a href={url('cv.html')} aria-current={active === 'cv' ? 'page' : undefined}>CV</a></nav>
       <button class="theme-toggle" aria-label="Switch color theme" title="Switch color theme"><svg class="moon" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20.8 13a9 9 0 0 1-9.8-9.8A9 9 0 1 0 20.8 13Z"/></svg><svg class="sun" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg></button>
@@ -54,6 +54,15 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
   <main id="main" class="shell"><slot /></main>
   <footer class="site-footer shell"><div><strong>Yeongbin Kwon</strong></div><div class="footer-links"><a href="mailto:ybkwon04@snu.ac.kr">Email</a><a href="https://github.com/Zeugnis04/">GitHub</a><a href={url('feed.xml')}>RSS</a><span>© {new Date().getFullYear()}</span></div></footer>
   <script>
+    const wordmark = document.querySelector<HTMLAnchorElement>('.wordmark')!;
+    const initials = wordmark.querySelectorAll<HTMLElement>('.wordmark-initial');
+    function updateWordmark() {
+      const expanded = wordmark.matches(':hover, :focus-visible');
+      wordmark.classList.toggle('is-expanded', expanded);
+      initials[0].textContent = expanded ? 'Y' : 'y';
+      initials[1].textContent = expanded ? 'K' : 'k';
+    }
+    ['mouseenter', 'mouseleave', 'focus', 'blur'].forEach(event => wordmark.addEventListener(event, updateWordmark));
     const button = document.querySelector<HTMLButtonElement>('.theme-toggle')!;
     const update = () => { const dark = document.documentElement.dataset.theme === 'dark'; button.setAttribute('aria-label', `Switch to ${dark ? 'light' : 'dark'} theme`); button.title = button.getAttribute('aria-label')!; };
     button.addEventListener('click', () => { const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'; document.documentElement.dataset.theme = next; try { localStorage.setItem('theme', next); } catch {} update(); });
