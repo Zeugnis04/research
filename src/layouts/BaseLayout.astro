@@ -9,6 +9,19 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 <!doctype html>
 <html lang="en">
 <head>
+  {import.meta.env.PROD && (
+    <>
+      <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-QGXVPV6SN8"></script>
+      <script is:inline>
+        if (!['localhost', '127.0.0.1', '[::1]'].includes(window.location.hostname)) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-QGXVPV6SN8');
+        }
+      </script>
+    </>
+  )}
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content={description} /><meta name="color-scheme" content="light dark" />
   <title>{pageTitle}</title><link rel="canonical" href={canonical} />

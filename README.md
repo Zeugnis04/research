@@ -72,3 +72,5 @@ npx playwright test
 Browser tests start a production preview and cover navigation, theme persistence, responsive overflow, search, and gallery keyboard behavior. Install Chromium with `npx playwright install chromium` if needed.
 
 Astro references: [content collections](https://docs.astro.build/en/guides/content-collections/) and [GitHub Pages deployment](https://docs.astro.build/en/guides/deploy/github/).
+
+Google Analytics uses the original GA4 measurement ID `G-QGXVPV6SN8` in the shared layout, enabled for production builds and excluding localhost page views. The old Jekyll RSS template is retained in `legacy/jekyll-feed.xml` to avoid shadowing the Astro feed in development.
