@@ -1,0 +1,8 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { postUrl, url } from '@/lib/site';
+const posts = await getCollection('posts');
+const tags = [...new Set(posts.flatMap(p => p.data.tags))].sort();
+---
+<BaseLayout title="Topics" active="notes"><div class="page-heading"><h1>Research topics</h1></div><div class="tags">{tags.map(tag => <a href={`#${tag}`}>{tag.replaceAll('-', ' ')}</a>)}</div><div class="topic-list">{tags.map(tag => <section id={tag}><h2>{tag.replaceAll('-', ' ')}</h2>{posts.filter(p => p.data.tags.includes(tag)).map(post => <a href={postUrl(post)}>{post.data.title}</a>)}</section>)}</div><a href={url('blog/blog-list/')}>← All notes</a></BaseLayout>

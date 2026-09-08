@@ -1,0 +1,14 @@
+---
+import { Image } from 'astro:assets';
+import { resolvePhotos, type ResolvedPhoto } from '@/lib/images';
+type Props = { photo?: ResolvedPhoto; src?: string; base?: string; caption?: string; alt?: string; inRow?: boolean; fullWidth?: boolean; widths?: number[]; sizes?: string };
+const { photo: resolved, src, base = '', caption, alt, inRow = false, fullWidth = false, widths = [480, 800, 1320], sizes = '(max-width: 760px) 92vw, 800px' } = Astro.props;
+if (!resolved && !src) throw new Error('Figure requires a photo or src.');
+const photo = resolved ?? (await resolvePhotos([{ src: src!, caption, alt }], base))[0];
+---
+<figure class:list={['photo', { fullwidth: fullWidth }]} style={inRow ? `--ar:${photo.ratio}` : undefined}>
+  <a href={photo.fullSrc} data-pswp-width={photo.fullWidth} data-pswp-height={photo.fullHeight} aria-label={`Enlarge image: ${photo.alt || 'research photograph'}`}>
+    <Image src={photo.metadata} alt={photo.alt} widths={widths.filter(w => w <= photo.metadata.width)} sizes={sizes} format="webp" loading="lazy" decoding="async" />
+  </a>
+  {photo.caption && <figcaption set:html={photo.caption} />}
+</figure>

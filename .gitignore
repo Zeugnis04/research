@@ -7,3 +7,8 @@ Gemfile.lock
 /pkg
 _drafts
 archive/
+node_modules/
+dist/
+.astro/
+playwright-report/
+test-results/
