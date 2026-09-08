@@ -27,7 +27,9 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
   <title>{pageTitle}</title><link rel="canonical" href={canonical} />
   <meta property="og:title" content={pageTitle} /><meta property="og:description" content={description} /><meta property="og:type" content="website" /><meta property="og:url" content={canonical} />
   <meta property="og:image" content={new URL(url('assets/img/YBKwon.jpg'), Astro.site)} />
-  <link rel="icon" type="image/svg+xml" href={url('favicon.svg')} /><link rel="alternate" type="application/rss+xml" title="Yeongbin Kwon" href={url('feed.xml')} />
+  <link rel="icon" type="image/svg+xml" href={url('favicon.svg')} />
+  <link rel="apple-touch-icon" sizes="180x180" href={url('apple-touch-icon.png')} />
+  <link rel="alternate" type="application/rss+xml" title="Yeongbin Kwon" href={url('feed.xml')} />
   <link rel="preconnect" href="https://use.typekit.net" crossorigin />
   <script is:inline>
     (() => { let theme; try { theme = localStorage.getItem('theme'); } catch {} document.documentElement.dataset.theme = theme === 'light' || theme === 'dark' ? theme : matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; })();
