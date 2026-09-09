@@ -7,7 +7,7 @@ import 'photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css'
   import PhotoSwipeDynamicCaption from 'photoswipe-dynamic-caption-plugin';
   const groups = [...document.querySelectorAll<HTMLElement>('.figure-row'), ...Array.from(document.querySelectorAll<HTMLElement>('figure.photo')).filter(el => !el.closest('.figure-row'))];
   groups.forEach(gallery => {
-    const lightbox = new PhotoSwipeLightbox({ gallery, children: 'a[data-pswp-width]', pswpModule: () => import('photoswipe'), bgOpacity: .96, wheelToZoom: true, showHideAnimationType: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'none' : 'zoom' });
+    const lightbox = new PhotoSwipeLightbox({ gallery, children: 'a[data-pswp-width]', pswpModule: () => import('photoswipe'), bgOpacity: .96, wheelToZoom: true, close: true, closeTitle: 'Close gallery', escKey: true, bgClickAction: 'close', showHideAnimationType: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'none' : 'zoom' });
     new PhotoSwipeDynamicCaption(lightbox, { type: 'below', captionContent: slide => slide.data.element?.closest('figure')?.querySelector('figcaption')?.innerHTML ?? '' });
     lightbox.init();
   });

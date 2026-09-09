@@ -17,13 +17,13 @@ test('navigation, themes, and keyboard access', async ({ page }) => {
 
 test('search filters notes and handles no matches', async ({ page }) => {
   await page.goto('blog/blog-list/');
-  await expect(page.locator('[data-entry]:visible')).toHaveCount(6);
+  await expect(page.locator('[data-entry]:visible')).toHaveCount(9);
   await page.getByRole('searchbox').fill('aurora');
   await expect(page.locator('[data-entry]:visible')).toHaveCount(1);
   await page.getByRole('searchbox').fill('no-such-project');
   await expect(page.locator('#empty-state')).toBeVisible();
   await page.getByRole('searchbox').fill('');
-  await expect(page.locator('[data-entry]:visible')).toHaveCount(6);
+  await expect(page.locator('[data-entry]:visible')).toHaveCount(9);
 });
 
 test('gallery opens by keyboard, browses slides, and restores focus', async ({ page }) => {
@@ -34,6 +34,7 @@ test('gallery opens by keyboard, browses slides, and restores focus', async ({ p
   await first.focus();
   await page.keyboard.press('Enter');
   await expect(page.locator('.pswp')).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Close gallery' })).toBeVisible();
   await expect(page.locator('.pswp__counter')).toHaveText('1 / 13');
   await expect(page.locator('.pswp')).toBeFocused();
   await page.keyboard.press('ArrowRight');
@@ -44,8 +45,19 @@ test('gallery opens by keyboard, browses slides, and restores focus', async ({ p
   expect(errors).toEqual([]);
 });
 
+test('stereo-imaging gallery keeps its caption and close control visible', async ({ page }) => {
+  await page.goto('blog/research/stereo-imaging-coastal-waves/');
+  const first = page.locator('.figure-row a[data-pswp-width]').first();
+  await first.click();
+  await page.waitForTimeout(500);
+  await expect(page.getByRole('button', { name: 'Close gallery' })).toBeVisible();
+  await expect(page.locator('.pswp__dynamic-caption').filter({ hasText: 'Thesis Poster Draft' })).toBeVisible();
+  await page.getByRole('button', { name: 'Close gallery' }).click();
+  await expect(page.locator('.pswp')).toHaveCount(0);
+});
+
 test('content, math, and every local page link resolve', async ({ page }) => {
-  const routes = ['./', 'research/', 'cv.html', 'tags/', 'blog/blog-list/', 'blog/research/wave-shoaling-project/', 'blog/research/stereo-imaging-coastal-waves/', 'blog/research/lid-stormwater-strategies/', 'blog/research/weather-jiu-jitsu-agu25-posters/', 'blog/news/best-bachelors-thesis-award/', 'blog/research/aurora/'];
+  const routes = ['./', 'research/', 'cv.html', 'tags/', 'blog/blog-list/', 'blog/research/wave-shoaling-project/', 'blog/research/stereo-imaging-coastal-waves/', 'blog/research/lid-stormwater-strategies/', 'blog/research/weather-jiu-jitsu-agu25-posters/', 'blog/news/best-bachelors-thesis-award/', 'blog/news/starting-masters-columbia/', 'blog/news/kwanjeong-foundation-scholarship/', 'blog/news/started-researcher-position-celab/', 'blog/research/aurora/'];
   const links = new Set<string>();
   for (const route of routes) {
     const response = await page.goto(route);
@@ -59,6 +71,7 @@ test('content, math, and every local page link resolve', async ({ page }) => {
   for (const href of links) expect((await page.request.get(href)).status(), href).toBe(200);
   await page.goto('blog/research/wave-shoaling-project/');
   expect(await page.locator('mjx-container').count()).toBeGreaterThan(10);
+  await expect(page.locator('pre[data-language="plaintext"]')).toHaveCount(0);
 });
 
 for (const width of [375, 768, 1440]) {

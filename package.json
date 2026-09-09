@@ -10,23 +10,24 @@
     "check": "astro check"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.4",
-    "@astrojs/mdx": "^4.3.14",
-    "@astrojs/rss": "^4.0.12",
-    "astro": "^5.0.0",
+    "@astrojs/check": "^0.9.10",
+    "@astrojs/markdown-satteri": "^0.4.1",
+    "@astrojs/mdx": "^8.0.1",
+    "@astrojs/rss": "^4.0.19",
+    "astro": "^7.3.2",
     "photoswipe": "^5.4.4",
     "photoswipe-dynamic-caption-plugin": "^1.2.7",
     "rehype-mathjax": "^7.1.0",
+    "rehype-stringify": "^10.0.1",
     "remark-math": "^6.0.0",
-    "typescript": "^5.7.0",
-    "remark-smartypants": "^3.0.2",
-    "unified": "^11.0.5",
     "remark-parse": "^11.0.0",
     "remark-rehype": "^11.1.2",
-    "rehype-stringify": "^10.0.1"
+    "remark-smartypants": "^3.0.2",
+    "typescript": "^5.7.0",
+    "unified": "^11.0.5"
   },
   "devDependencies": {
-    "sharp": "^0.34.5",
-    "@playwright/test": "^1.56.0"
+    "@playwright/test": "^1.56.0",
+    "sharp": "^0.34.5"
   }
 }

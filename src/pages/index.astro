@@ -11,18 +11,19 @@ import { url } from '@/lib/site';
   <section class="hero hero-about" aria-labelledby="intro-title">
     <div class="hero-copy">
       <h1 id="intro-title">Yeongbin Kwon</h1>
+      <p class="name-note"><span lang="ko">권영빈</span> · <span lang="zh">權榮彬</span> · <span class="ipa">[kʷʌn.jʌŋ.bin]</span></p>
       <Image class="intro-portrait" src={portrait} alt="Yeongbin Kwon" width={240} height={240} format="webp" />
       <div class="about-copy">
-        <p>I hold a B.S. in Civil and Environmental Engineering from Seoul National University. My interests span environmental fluid mechanics, coastal processes, and the application of machine learning to climate and energy systems.</p>
-        <p>My recent work includes developing low-cost stereo imaging methods to reconstruct nearshore wave fields and studying foundation models for weather forecasting using ERA5 reanalysis data.</p>
-        <p class="name-note"><span lang="ko">권영빈</span> · <span lang="zh">權榮彬</span> · [kʷʌn.jʌŋ.bin]</p>
+        <p>I am currently pursuing an <abbr class="acronym" title="Master of Science">M.S.</abbr> in Civil Engineering and Engineering Mechanics at Columbia University.</p>
+        <p>I hold a <abbr class="acronym" title="Bachelor of Science">B.S.</abbr> in Civil and Environmental Engineering from Seoul National University. My interests span environmental fluid mechanics, coastal processes, and the application of machine learning to climate and energy systems.</p>
+        <p>My recent work includes developing low-cost stereo imaging methods to reconstruct nearshore wave fields and studying foundation models for weather forecasting using <abbr class="acronym" title="ECMWF Reanalysis v5">ERA5</abbr> reanalysis data.</p>
       </div>
       <div class="hero-actions">
         <a class="button primary" href={url('research/')}>Explore my research</a>
         <a class="button secondary" href={url('cv.html')}>Curriculum vitae</a>
       </div>
       <div class="social-links">
-        <a href="mailto:ybkwon04@snu.ac.kr">Email</a>
+        <a href={url('cv.html#contacts')}>Email</a>
         <a href="https://scholar.google.com/citations?user=KEQmFeUAAAAJ">Google Scholar</a>
         <a href="https://github.com/Zeugnis04/">GitHub</a>
         <a href="https://www.linkedin.com/in/yeongbin-kwon/">LinkedIn</a>
@@ -34,5 +35,5 @@ import { url } from '@/lib/site';
     </figure>
   </section>
   <section class="work-section" aria-labelledby="work-title"><div class="section-heading"><div><h2 id="work-title">Featured research</h2></div><a class="text-link" href={url('research/')}>All research</a></div><div class="project-grid">{projects.map(project => <ProjectCard project={project} />)}</div></section>
-  <section class="news-section" aria-labelledby="news-title"><div class="section-label"><h2 id="news-title">News</h2></div><div class="news-list"><a href={url('cv.html')}><time datetime="2026-02">FEB 2026</time><div><h3>Graduated with honors</h3><p>B.S., summa cum laude, Seoul National University.</p></div></a><a href={url('blog/research/weather-jiu-jitsu-agu25-posters/')}><time datetime="2025-12">DEC 2025</time><div><h3>Weather Jiu-Jitsu at AGU25</h3><p>Two posters on adaptive perturbations and weather systems.</p></div></a><a href={url('blog/news/best-bachelors-thesis-award/')}><time datetime="2025-12">DEC 2025</time><div><h3>Best Bachelor’s Thesis Award</h3><p>Recognizing research in calibration-free coastal stereo imaging.</p></div></a></div></section>
+  <section class="news-section" aria-labelledby="news-title"><div class="section-label"><h2 id="news-title">News</h2></div><div class="news-list"><a href={url('blog/news/starting-masters-columbia/')}><time datetime="2026-09">SEP 2026</time><div><h3>Beginning an <abbr class="acronym" title="Master of Science">M.S.</abbr> at Columbia</h3><p>Starting Civil Engineering and Engineering Mechanics this September.</p></div></a><a href={url('blog/news/kwanjeong-foundation-scholarship/')}><time datetime="2026-09">SEP 2026</time><div><h3>Awarded the Kwanjeong Foundation Scholarship</h3><p>Highly selective annual support for graduate study.</p></div></a><a href={url('blog/news/started-researcher-position-celab/')}><time datetime="2026-03">MAR 2026</time><div><h3>Started a Researcher position at CELAB</h3><p>Rip-current detection through physical modeling and computer vision.</p></div></a><a href={url('cv.html')}><time datetime="2026-02">FEB 2026</time><div><h3>Graduated with honors</h3><p><abbr class="acronym" title="Bachelor of Science">B.S.</abbr>, summa cum laude, Seoul National University.</p></div></a></div></section>
 </BaseLayout>
