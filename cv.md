@@ -14,7 +14,7 @@ full_width: true
 *[Download as PDF](assets/YeongbinKwonCV202602.pdf)*
 
 ## Contacts
-[ybkwon04@snu.ac.kr](mailto:ybkwon04@snu.ac.kr) • [ybkwon04@gmail.com](mailto:ybkwon04@gmail.com) • [linkedin.com/in/yeongbin-kwon](https://www.linkedin.com/in/yeongbin-kwon/)  
+yk3182 <span class="small-caps">at</span> columbia <span class="small-caps">dot</span> edu • [linkedin.com/in/yeongbin-kwon](https://www.linkedin.com/in/yeongbin-kwon/)
 
 ## Education
 

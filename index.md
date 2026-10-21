@@ -29,7 +29,7 @@ full_width: true
       <i class="fa-solid fa-file-text"></i>
       CV
     </a>
-    <a href="mailto:ybkwon04@snu.ac.kr" class="contact-btn email-btn">
+    <a href="mailto:yk3182@columbia.edu" class="contact-btn email-btn">
       <i class="fa-solid fa-envelope"></i>
       Email
     </a>
